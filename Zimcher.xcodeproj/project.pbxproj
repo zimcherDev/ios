@@ -24,7 +24,7 @@
 		B10EDFD11BFA685300FE8E20 /* UIRadiusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10EDFC31BFA685300FE8E20 /* UIRadiusButton.swift */; };
 		B10EDFD21BFA685300FE8E20 /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10EDFC51BFA685300FE8E20 /* Keyboard.swift */; };
 		B10EDFD41BFA694600FE8E20 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B10EDFD31BFA694600FE8E20 /* Default-568h@2x.png */; };
-		B10EDFD61BFA6C6100FE8E20 /* ValidationAndTopAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10EDFD51BFA6C6100FE8E20 /* ValidationAndTopAlertView.swift */; };
+		B170316A1BFA7AA5008A8363 /* ValidationAndTopAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17031691BFA7AA5008A8363 /* ValidationAndTopAlertView.swift */; };
 		B1A750551BFA5308002E92AF /* ZimcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A750541BFA5308002E92AF /* ZimcherTests.swift */; };
 		B86160551BFA63F30014E1D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B86160531BFA63F30014E1D0 /* Assets.xcassets */; };
 		B861605A1BFA63F90014E1D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86160571BFA63F90014E1D0 /* AppDelegate.swift */; };
@@ -69,7 +69,7 @@
 		B10EDFC31BFA685300FE8E20 /* UIRadiusButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIRadiusButton.swift; sourceTree = "<group>"; };
 		B10EDFC51BFA685300FE8E20 /* Keyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
 		B10EDFD31BFA694600FE8E20 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../../Default-568h@2x.png"; sourceTree = "<group>"; };
-		B10EDFD51BFA6C6100FE8E20 /* ValidationAndTopAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationAndTopAlertView.swift; sourceTree = "<group>"; };
+		B17031691BFA7AA5008A8363 /* ValidationAndTopAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationAndTopAlertView.swift; sourceTree = "<group>"; };
 		B1A7503C1BFA5307002E92AF /* Zimcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zimcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1A750501BFA5308002E92AF /* ZimcherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZimcherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1A750541BFA5308002E92AF /* ZimcherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZimcherTests.swift; sourceTree = "<group>"; };
@@ -141,7 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				B10EDFBA1BFA685300FE8E20 /* LogIn.storyboard */,
-				B10EDFD51BFA6C6100FE8E20 /* ValidationAndTopAlertView.swift */,
+				B17031691BFA7AA5008A8363 /* ValidationAndTopAlertView.swift */,
 				B10EDFBB1BFA685300FE8E20 /* LogInSignUpViewController.swift */,
 				B10EDFB81BFA685300FE8E20 /* EntryViewController.swift */,
 				B10EDFB91BFA685300FE8E20 /* ForgetPasswordViewController.swift */,
@@ -404,7 +404,6 @@
 				B861608F1BFA640A0014E1D0 /* MIME.swift in Sources */,
 				B861608D1BFA640A0014E1D0 /* Validation.swift in Sources */,
 				B10EDFD21BFA685300FE8E20 /* Keyboard.swift in Sources */,
-				B10EDFD61BFA6C6100FE8E20 /* ValidationAndTopAlertView.swift in Sources */,
 				B10EDFC91BFA685300FE8E20 /* EntryViewController.swift in Sources */,
 				B86160911BFA640A0014E1D0 /* MultipartUpload.swift in Sources */,
 				B10EDFCA1BFA685300FE8E20 /* ForgetPasswordViewController.swift in Sources */,
@@ -413,6 +412,7 @@
 				B861608E1BFA640A0014E1D0 /* UIImageExtensions.swift in Sources */,
 				B86160931BFA640A0014E1D0 /* TaskCreator.swift in Sources */,
 				B861608C1BFA640A0014E1D0 /* UIValidatableTextField.swift in Sources */,
+				B170316A1BFA7AA5008A8363 /* ValidationAndTopAlertView.swift in Sources */,
 				B86160901BFA640A0014E1D0 /* MixedStream.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
