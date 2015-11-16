@@ -34,6 +34,7 @@
 		B86160911BFA640A0014E1D0 /* MultipartUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86160881BFA640A0014E1D0 /* MultipartUpload.swift */; };
 		B86160921BFA640A0014E1D0 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86160891BFA640A0014E1D0 /* Networking.swift */; };
 		B86160931BFA640A0014E1D0 /* TaskCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B861608A1BFA640A0014E1D0 /* TaskCreator.swift */; };
+		B861609C1BFA6EE70014E1D0 /* ZCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B861609B1BFA6EE70014E1D0 /* ZCViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		B86160881BFA640A0014E1D0 /* MultipartUpload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipartUpload.swift; sourceTree = "<group>"; };
 		B86160891BFA640A0014E1D0 /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		B861608A1BFA640A0014E1D0 /* TaskCreator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskCreator.swift; sourceTree = "<group>"; };
+		B861609B1BFA6EE70014E1D0 /* ZCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZCViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +167,7 @@
 		B861605D1BFA64040014E1D0 /* UIKit Ojbects */ = {
 			isa = PBXGroup;
 			children = (
+				B86160941BFA6DF80014E1D0 /* BaseViewController */,
 				B861605E1BFA64040014E1D0 /* MainScenes */,
 				B86160621BFA64040014E1D0 /* SignUp&LoginScenes */,
 				B86160691BFA64040014E1D0 /* UI Helpers */,
@@ -270,6 +273,15 @@
 			path = NetworkingHelper;
 			sourceTree = "<group>";
 		};
+		B86160941BFA6DF80014E1D0 /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B861609B1BFA6EE70014E1D0 /* ZCViewController.swift */,
+			);
+			name = BaseViewController;
+			path = "/Users/TianhangYang/myWorks/zimcher2015/Zimcher/UIKit Ojbects/BaseViewController";
+			sourceTree = "<absolute>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -280,6 +292,7 @@
 				B1A750381BFA5307002E92AF /* Sources */,
 				B1A750391BFA5307002E92AF /* Frameworks */,
 				B1A7503A1BFA5307002E92AF /* Resources */,
+				B861609D1BFA713C0014E1D0 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -370,6 +383,22 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B861609D1BFA713C0014E1D0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "TAGS=\"TODO:|FIXME:\"\necho \"searching ${SRCROOT} for ${TAGS}\"\nfind \"${SRCROOT}\" \\( -name \"*.swift\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($TAGS).*\\$\" | perl -p -e \"s/($TAGS)/ warning: \\$1/\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B1A750381BFA5307002E92AF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -392,6 +421,7 @@
 				B86160771BFA64040014E1D0 /* LogInSignUpViewController.swift in Sources */,
 				B86160741BFA64040014E1D0 /* EntryViewController.swift in Sources */,
 				B86160931BFA640A0014E1D0 /* TaskCreator.swift in Sources */,
+				B861609C1BFA6EE70014E1D0 /* ZCViewController.swift in Sources */,
 				B861608C1BFA640A0014E1D0 /* UIValidatableTextField.swift in Sources */,
 				B86160901BFA640A0014E1D0 /* MixedStream.swift in Sources */,
 			);
