@@ -16,9 +16,9 @@ class TabBarViewController: UITabBarController {
         // Do any additional setup after loading the view.
         //UITabBar.appearance().selectionIndicatorImage = UIImage.imageFromColorAndSize(UIColor.whiteColor(), size: CGSizeMake(200, tabBar.frame.size.height))
         
-        UITabBar.appearance().tintColor = CONSTANT.COLORSCHEME_DEFAULT.TAB_BAR.TINT
-        UITabBar.appearance().barTintColor = CONSTANT.COLORSCHEME_DEFAULT.TAB_BAR.BAR_TINT
+        UITabBar.appearance().tintColor = UIColor.whiteColor()
+        UITabBar.appearance().barTintColor = UIColor(red: 22/256.0, green: 24/256.0, blue: 45/256.0, alpha: 1)
+        
     }
-
 
 }
