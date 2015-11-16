@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ForgetPasswordViewController: UIViewController, InputAlertViewContainer{
+class ForgetPasswordViewController: ViewControllerWithKBLayoutGuide, ValidationAndTopAlertView{
 
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var emailInput: UIValidatableTextField!

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SignUpViewController: ViewControllerWithKBLayoutGuide, InputAlertViewContainer{
+class SignUpViewController: ViewControllerWithKBLayoutGuide, ValidationAndTopAlertView{
     //@IBOutlet weak var termsToBottom: NSLayoutConstraint!
     @IBOutlet weak var termsView: UIStackView!
 

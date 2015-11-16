@@ -8,7 +8,7 @@
 
 import UIKit
 
-class EntryViewController: UIViewController {
+class EntryViewController: ViewControllerWithKBLayoutGuide {
 
     // MARK: Hide the navigation bar for the entry view
     override func viewWillAppear(animated: Bool) {
