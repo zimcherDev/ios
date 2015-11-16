@@ -9,15 +9,15 @@
 import Foundation
 import UIKit
 
-protocol InputAlertViewContainer: class {
+protocol TopAlertViewContainer: class {
     var topLayoutGuide: UILayoutSupport { get }
     var view: UIView! {get}
 }
 
-extension InputAlertViewContainer{
-    func showInvalidInputAlert(alertString: String)
+extension TopAlertViewContainer{
+    func showTopAlert(alertString: String)
     {
-        let v = UIInvalidInputAlertView.sharedView
+        let v = TopAlertView.sharedView
         
         if !view.subviews.contains(v) {
             view.addSubview(v)
@@ -29,25 +29,17 @@ extension InputAlertViewContainer{
         v.show(alertString)
     }
     
-    //primary interface
-    func validate(input: [Validatable])-> Bool
-    {
-        if let errorMsg = input.filter({ i in !IsValid.hasValidInput(i.validatee, validator: i.validator) }).first?.invalidMessage {
-            showInvalidInputAlert(errorMsg)
-            return false
-        }
-        return true
-    }
+ 
 }
 
 
 
 
-class UIInvalidInputAlertView: UIView {
+class TopAlertView: UIView {
     
     @IBOutlet weak var alertTextLabel: UILabel!
     
-    static let sharedView = NSBundle.mainBundle().loadNibNamed("InvalidInputAlertView", owner: nil, options: nil).first as! UIInvalidInputAlertView
+    static let sharedView = NSBundle.mainBundle().loadNibNamed("AlertPanel", owner: nil, options: nil).first as! TopAlertView
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -56,12 +48,16 @@ class UIInvalidInputAlertView: UIView {
     }
     
     
-    func show(alertString: String)
+    func show(alertString: String, backgroundColor: UIColor? = nil, duration: Double = 2)
     {
+        if let color = backgroundColor {
+            TopAlertView.sharedView.backgroundColor = color
+        }
+        
         alertTextLabel.text = alertString
         UIView.animateWithDuration(0.5, delay: 0, options: [.BeginFromCurrentState], animations: {[weak self] in self?.alpha = 0.9 })
             { [weak self] _ in
-                UIView.animateWithDuration(0.5, delay: 2, options: [.BeginFromCurrentState], animations: {
+                UIView.animateWithDuration(0.5, delay: duration, options: [.BeginFromCurrentState], animations: {
                     self?.alpha = 0
                     }) {   _ in /*self?.removeFromSuperview()*/ }
             }

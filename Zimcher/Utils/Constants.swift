@@ -104,7 +104,10 @@ struct CONSTANT {
     }
     
     struct COLORSCHEME_DEFAULT {
-
+        struct TAB_BAR {
+            static let TINT = UIColor.whiteColor()
+            static let BAR_TINT = PALETTE_DEFAULT.DARK_BLUE
+        }
     }
     
     struct PALETTE_DEFAULT {
