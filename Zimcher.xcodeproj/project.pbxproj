@@ -39,7 +39,7 @@
 		B86160911BFA640A0014E1D0 /* MultipartUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86160881BFA640A0014E1D0 /* MultipartUpload.swift */; };
 		B86160921BFA640A0014E1D0 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86160891BFA640A0014E1D0 /* Networking.swift */; };
 		B86160931BFA640A0014E1D0 /* TaskCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B861608A1BFA640A0014E1D0 /* TaskCreator.swift */; };
-		B861609C1BFA6EE70014E1D0 /* ZCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B861609B1BFA6EE70014E1D0 /* ZCViewController.swift */; };
+		B86160A01BFA73340014E1D0 /* ZCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B861609F1BFA73340014E1D0 /* ZCViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,7 +88,7 @@
 		B86160881BFA640A0014E1D0 /* MultipartUpload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipartUpload.swift; sourceTree = "<group>"; };
 		B86160891BFA640A0014E1D0 /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		B861608A1BFA640A0014E1D0 /* TaskCreator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskCreator.swift; sourceTree = "<group>"; };
-		B861609B1BFA6EE70014E1D0 /* ZCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZCViewController.swift; sourceTree = "<group>"; };
+		B861609F1BFA73340014E1D0 /* ZCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZCViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +122,7 @@
 		B10EDFB21BFA685300FE8E20 /* UIKit Objects */ = {
 			isa = PBXGroup;
 			children = (
+				B861609E1BFA73340014E1D0 /* BaseViewController */,
 				B10EDFB31BFA685300FE8E20 /* MainScenes */,
 				B10EDFB71BFA685300FE8E20 /* SignUp&LoginScenes */,
 				B10EDFBE1BFA685300FE8E20 /* UI Helpers */,
@@ -183,10 +184,6 @@
 		B10EDFC41BFA685300FE8E20 /* Keyboard */ = {
 			isa = PBXGroup;
 			children = (
-				B86160941BFA6DF80014E1D0 /* BaseViewController */,
-				B861605E1BFA64040014E1D0 /* MainScenes */,
-				B86160621BFA64040014E1D0 /* SignUp&LoginScenes */,
-				B86160691BFA64040014E1D0 /* UI Helpers */,
 			);
 			path = Keyboard;
 			sourceTree = "<group>";
@@ -290,14 +287,13 @@
 			path = NetworkingHelper;
 			sourceTree = "<group>";
 		};
-		B86160941BFA6DF80014E1D0 /* BaseViewController */ = {
+		B861609E1BFA73340014E1D0 /* BaseViewController */ = {
 			isa = PBXGroup;
 			children = (
-				B861609B1BFA6EE70014E1D0 /* ZCViewController.swift */,
+				B861609F1BFA73340014E1D0 /* ZCViewController.swift */,
 			);
-			name = BaseViewController;
-			path = "/Users/TianhangYang/myWorks/zimcher2015/Zimcher/UIKit Ojbects/BaseViewController";
-			sourceTree = "<absolute>";
+			path = BaseViewController;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -443,9 +439,9 @@
 				B861605A1BFA63F90014E1D0 /* AppDelegate.swift in Sources */,
 				B861608E1BFA640A0014E1D0 /* UIImageExtensions.swift in Sources */,
 				B86160931BFA640A0014E1D0 /* TaskCreator.swift in Sources */,
-				B861609C1BFA6EE70014E1D0 /* ZCViewController.swift in Sources */,
 				B861608C1BFA640A0014E1D0 /* UIValidatableTextField.swift in Sources */,
 				B86160901BFA640A0014E1D0 /* MixedStream.swift in Sources */,
+				B86160A01BFA73340014E1D0 /* ZCViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
