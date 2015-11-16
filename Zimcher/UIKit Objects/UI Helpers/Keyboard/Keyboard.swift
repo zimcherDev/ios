@@ -41,7 +41,6 @@ class ViewControllerWithKBLayoutGuide: UIViewController {
         let animationCurve = (userInfo[UIKeyboardAnimationCurveUserInfoKey] as! NSNumber).integerValue
         let animationDuration = (userInfo[UIKeyboardAnimationDurationUserInfoKey] as! NSNumber).doubleValue
         
-        //change bottom layout guideline ?
         let options = UIViewAnimationOptions(rawValue: UInt(animationCurve << 16))
         UIView.animateWithDuration(animationDuration, delay: 0, options: options, animations:
             {[weak self] in

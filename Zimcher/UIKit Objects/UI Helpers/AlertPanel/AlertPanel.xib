@@ -7,7 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="UIInvalidInputAlertView" customModule="Zimcher" customModuleProvider="target">
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TopAlertView" customModule="Zimcher" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -29,7 +29,7 @@
                 <constraint firstItem="UHj-5u-d1J" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="tAe-So-WLv"/>
             </constraints>
             <connections>
-                <outlet property="alertTextLabel" destination="UHj-5u-d1J" id="4Nf-lC-qXH"/>
+                <outlet property="alertTextLabel" destination="UHj-5u-d1J" id="vdp-1M-z6E"/>
             </connections>
         </view>
     </objects>

@@ -7,24 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B10EDFAF1BFA680A00FE8E20 /* Righteous-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B10EDFAC1BFA680900FE8E20 /* Righteous-Regular.ttf */; };
+		B10EDFB01BFA680A00FE8E20 /* SF-UI-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = B10EDFAD1BFA680A00FE8E20 /* SF-UI-Display-Medium.otf */; };
+		B10EDFB11BFA680A00FE8E20 /* SF-UI-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B10EDFAE1BFA680A00FE8E20 /* SF-UI-Display-Semibold.otf */; };
+		B10EDFC61BFA685300FE8E20 /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B10EDFB41BFA685300FE8E20 /* Discover.storyboard */; };
+		B10EDFC71BFA685300FE8E20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B10EDFB51BFA685300FE8E20 /* Main.storyboard */; };
+		B10EDFC81BFA685300FE8E20 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10EDFB61BFA685300FE8E20 /* TabBarViewController.swift */; };
+		B10EDFC91BFA685300FE8E20 /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10EDFB81BFA685300FE8E20 /* EntryViewController.swift */; };
+		B10EDFCA1BFA685300FE8E20 /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10EDFB91BFA685300FE8E20 /* ForgetPasswordViewController.swift */; };
+		B10EDFCB1BFA685300FE8E20 /* LogIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B10EDFBA1BFA685300FE8E20 /* LogIn.storyboard */; };
+		B10EDFCC1BFA685300FE8E20 /* LogInSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10EDFBB1BFA685300FE8E20 /* LogInSignUpViewController.swift */; };
+		B10EDFCD1BFA685300FE8E20 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10EDFBC1BFA685300FE8E20 /* LoginViewController.swift */; };
+		B10EDFCE1BFA685300FE8E20 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10EDFBD1BFA685300FE8E20 /* SignUpViewController.swift */; };
+		B10EDFCF1BFA685300FE8E20 /* TopAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10EDFC01BFA685300FE8E20 /* TopAlertView.swift */; };
+		B10EDFD01BFA685300FE8E20 /* AlertPanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = B10EDFC11BFA685300FE8E20 /* AlertPanel.xib */; };
+		B10EDFD11BFA685300FE8E20 /* UIRadiusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10EDFC31BFA685300FE8E20 /* UIRadiusButton.swift */; };
+		B10EDFD21BFA685300FE8E20 /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10EDFC51BFA685300FE8E20 /* Keyboard.swift */; };
+		B10EDFD41BFA694600FE8E20 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B10EDFD31BFA694600FE8E20 /* Default-568h@2x.png */; };
+		B10EDFD61BFA6C6100FE8E20 /* ValidationAndTopAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10EDFD51BFA6C6100FE8E20 /* ValidationAndTopAlertView.swift */; };
 		B1A750551BFA5308002E92AF /* ZimcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A750541BFA5308002E92AF /* ZimcherTests.swift */; };
 		B86160551BFA63F30014E1D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B86160531BFA63F30014E1D0 /* Assets.xcassets */; };
 		B861605A1BFA63F90014E1D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86160571BFA63F90014E1D0 /* AppDelegate.swift */; };
 		B861605B1BFA63F90014E1D0 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B86160581BFA63F90014E1D0 /* Info.plist */; };
 		B861605C1BFA63F90014E1D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B86160591BFA63F90014E1D0 /* LaunchScreen.storyboard */; };
-		B86160711BFA64040014E1D0 /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B861605F1BFA64040014E1D0 /* Discover.storyboard */; };
-		B86160721BFA64040014E1D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B86160601BFA64040014E1D0 /* Main.storyboard */; };
-		B86160731BFA64040014E1D0 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86160611BFA64040014E1D0 /* TabBarViewController.swift */; };
-		B86160741BFA64040014E1D0 /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86160631BFA64040014E1D0 /* EntryViewController.swift */; };
-		B86160751BFA64040014E1D0 /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86160641BFA64040014E1D0 /* ForgetPasswordViewController.swift */; };
-		B86160761BFA64040014E1D0 /* LogIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B86160651BFA64040014E1D0 /* LogIn.storyboard */; };
-		B86160771BFA64040014E1D0 /* LogInSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86160661BFA64040014E1D0 /* LogInSignUpViewController.swift */; };
-		B86160781BFA64040014E1D0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86160671BFA64040014E1D0 /* LoginViewController.swift */; };
-		B86160791BFA64040014E1D0 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86160681BFA64040014E1D0 /* SignUpViewController.swift */; };
-		B861607A1BFA64040014E1D0 /* InvalidInputAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = B861606B1BFA64040014E1D0 /* InvalidInputAlert.swift */; };
-		B861607B1BFA64040014E1D0 /* InvalidInputAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B861606C1BFA64040014E1D0 /* InvalidInputAlertView.xib */; };
-		B861607C1BFA64040014E1D0 /* UIRadiusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B861606E1BFA64040014E1D0 /* UIRadiusButton.swift */; };
-		B861607D1BFA64040014E1D0 /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86160701BFA64040014E1D0 /* Keyboard.swift */; };
 		B861608B1BFA640A0014E1D0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B861607F1BFA640A0014E1D0 /* Constants.swift */; };
 		B861608C1BFA640A0014E1D0 /* UIValidatableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86160811BFA640A0014E1D0 /* UIValidatableTextField.swift */; };
 		B861608D1BFA640A0014E1D0 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86160821BFA640A0014E1D0 /* Validation.swift */; };
@@ -48,6 +53,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B10EDFAC1BFA680900FE8E20 /* Righteous-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Righteous-Regular.ttf"; sourceTree = "<group>"; };
+		B10EDFAD1BFA680A00FE8E20 /* SF-UI-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Medium.otf"; sourceTree = "<group>"; };
+		B10EDFAE1BFA680A00FE8E20 /* SF-UI-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Semibold.otf"; sourceTree = "<group>"; };
+		B10EDFB41BFA685300FE8E20 /* Discover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Discover.storyboard; sourceTree = "<group>"; };
+		B10EDFB51BFA685300FE8E20 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		B10EDFB61BFA685300FE8E20 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		B10EDFB81BFA685300FE8E20 /* EntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
+		B10EDFB91BFA685300FE8E20 /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
+		B10EDFBA1BFA685300FE8E20 /* LogIn.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LogIn.storyboard; sourceTree = "<group>"; };
+		B10EDFBB1BFA685300FE8E20 /* LogInSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInSignUpViewController.swift; sourceTree = "<group>"; };
+		B10EDFBC1BFA685300FE8E20 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B10EDFBD1BFA685300FE8E20 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		B10EDFC01BFA685300FE8E20 /* TopAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopAlertView.swift; sourceTree = "<group>"; };
+		B10EDFC11BFA685300FE8E20 /* AlertPanel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlertPanel.xib; sourceTree = "<group>"; };
+		B10EDFC31BFA685300FE8E20 /* UIRadiusButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIRadiusButton.swift; sourceTree = "<group>"; };
+		B10EDFC51BFA685300FE8E20 /* Keyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
+		B10EDFD31BFA694600FE8E20 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../../Default-568h@2x.png"; sourceTree = "<group>"; };
+		B10EDFD51BFA6C6100FE8E20 /* ValidationAndTopAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationAndTopAlertView.swift; sourceTree = "<group>"; };
 		B1A7503C1BFA5307002E92AF /* Zimcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zimcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1A750501BFA5308002E92AF /* ZimcherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZimcherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1A750541BFA5308002E92AF /* ZimcherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZimcherTests.swift; sourceTree = "<group>"; };
@@ -56,19 +79,6 @@
 		B86160571BFA63F90014E1D0 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B86160581BFA63F90014E1D0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B86160591BFA63F90014E1D0 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		B861605F1BFA64040014E1D0 /* Discover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Discover.storyboard; sourceTree = "<group>"; };
-		B86160601BFA64040014E1D0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		B86160611BFA64040014E1D0 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
-		B86160631BFA64040014E1D0 /* EntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
-		B86160641BFA64040014E1D0 /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
-		B86160651BFA64040014E1D0 /* LogIn.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LogIn.storyboard; sourceTree = "<group>"; };
-		B86160661BFA64040014E1D0 /* LogInSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInSignUpViewController.swift; sourceTree = "<group>"; };
-		B86160671BFA64040014E1D0 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		B86160681BFA64040014E1D0 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		B861606B1BFA64040014E1D0 /* InvalidInputAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvalidInputAlert.swift; sourceTree = "<group>"; };
-		B861606C1BFA64040014E1D0 /* InvalidInputAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InvalidInputAlertView.xib; sourceTree = "<group>"; };
-		B861606E1BFA64040014E1D0 /* UIRadiusButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIRadiusButton.swift; sourceTree = "<group>"; };
-		B86160701BFA64040014E1D0 /* Keyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
 		B861607F1BFA640A0014E1D0 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B86160811BFA640A0014E1D0 /* UIValidatableTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIValidatableTextField.swift; sourceTree = "<group>"; };
 		B86160821BFA640A0014E1D0 /* Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
@@ -99,6 +109,88 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B10EDFAB1BFA680900FE8E20 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B10EDFAC1BFA680900FE8E20 /* Righteous-Regular.ttf */,
+				B10EDFAD1BFA680A00FE8E20 /* SF-UI-Display-Medium.otf */,
+				B10EDFAE1BFA680A00FE8E20 /* SF-UI-Display-Semibold.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		B10EDFB21BFA685300FE8E20 /* UIKit Objects */ = {
+			isa = PBXGroup;
+			children = (
+				B10EDFB31BFA685300FE8E20 /* MainScenes */,
+				B10EDFB71BFA685300FE8E20 /* SignUp&LoginScenes */,
+				B10EDFBE1BFA685300FE8E20 /* UI Helpers */,
+			);
+			path = "UIKit Objects";
+			sourceTree = "<group>";
+		};
+		B10EDFB31BFA685300FE8E20 /* MainScenes */ = {
+			isa = PBXGroup;
+			children = (
+				B10EDFB41BFA685300FE8E20 /* Discover.storyboard */,
+				B10EDFB51BFA685300FE8E20 /* Main.storyboard */,
+				B10EDFB61BFA685300FE8E20 /* TabBarViewController.swift */,
+			);
+			path = MainScenes;
+			sourceTree = "<group>";
+		};
+		B10EDFB71BFA685300FE8E20 /* SignUp&LoginScenes */ = {
+			isa = PBXGroup;
+			children = (
+				B10EDFBA1BFA685300FE8E20 /* LogIn.storyboard */,
+				B10EDFD51BFA6C6100FE8E20 /* ValidationAndTopAlertView.swift */,
+				B10EDFBB1BFA685300FE8E20 /* LogInSignUpViewController.swift */,
+				B10EDFB81BFA685300FE8E20 /* EntryViewController.swift */,
+				B10EDFB91BFA685300FE8E20 /* ForgetPasswordViewController.swift */,
+				B10EDFBC1BFA685300FE8E20 /* LoginViewController.swift */,
+				B10EDFBD1BFA685300FE8E20 /* SignUpViewController.swift */,
+			);
+			path = "SignUp&LoginScenes";
+			sourceTree = "<group>";
+		};
+		B10EDFBE1BFA685300FE8E20 /* UI Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B10EDFBF1BFA685300FE8E20 /* AlertPanel */,
+				B10EDFC21BFA685300FE8E20 /* CustomUIElement */,
+				B10EDFC41BFA685300FE8E20 /* Keyboard */,
+			);
+			path = "UI Helpers";
+			sourceTree = "<group>";
+		};
+		B10EDFBF1BFA685300FE8E20 /* AlertPanel */ = {
+			isa = PBXGroup;
+			children = (
+				B10EDFC01BFA685300FE8E20 /* TopAlertView.swift */,
+				B10EDFC11BFA685300FE8E20 /* AlertPanel.xib */,
+			);
+			path = AlertPanel;
+			sourceTree = "<group>";
+		};
+		B10EDFC21BFA685300FE8E20 /* CustomUIElement */ = {
+			isa = PBXGroup;
+			children = (
+				B10EDFC31BFA685300FE8E20 /* UIRadiusButton.swift */,
+			);
+			path = CustomUIElement;
+			sourceTree = "<group>";
+		};
+		B10EDFC41BFA685300FE8E20 /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				B86160941BFA6DF80014E1D0 /* BaseViewController */,
+				B861605E1BFA64040014E1D0 /* MainScenes */,
+				B86160621BFA64040014E1D0 /* SignUp&LoginScenes */,
+				B86160691BFA64040014E1D0 /* UI Helpers */,
+			);
+			path = Keyboard;
+			sourceTree = "<group>";
+		};
 		B1A750331BFA5307002E92AF = {
 			isa = PBXGroup;
 			children = (
@@ -120,8 +212,8 @@
 		B1A7503E1BFA5307002E92AF /* Zimcher */ = {
 			isa = PBXGroup;
 			children = (
+				B10EDFB21BFA685300FE8E20 /* UIKit Objects */,
 				B861607E1BFA640A0014E1D0 /* Utils */,
-				B861605D1BFA64040014E1D0 /* UIKit Ojbects */,
 				B86160561BFA63F90014E1D0 /* Misc */,
 				B86160521BFA63F30014E1D0 /* Resources */,
 			);
@@ -140,17 +232,11 @@
 		B86160521BFA63F30014E1D0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B10EDFAB1BFA680900FE8E20 /* Fonts */,
 				B86160531BFA63F30014E1D0 /* Assets.xcassets */,
-				B86160541BFA63F30014E1D0 /* Fonts */,
+				B10EDFD31BFA694600FE8E20 /* Default-568h@2x.png */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		B86160541BFA63F30014E1D0 /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Fonts;
 			sourceTree = "<group>";
 		};
 		B86160561BFA63F90014E1D0 /* Misc */ = {
@@ -162,75 +248,6 @@
 			);
 			name = Misc;
 			path = Resources/Misc;
-			sourceTree = "<group>";
-		};
-		B861605D1BFA64040014E1D0 /* UIKit Ojbects */ = {
-			isa = PBXGroup;
-			children = (
-				B86160941BFA6DF80014E1D0 /* BaseViewController */,
-				B861605E1BFA64040014E1D0 /* MainScenes */,
-				B86160621BFA64040014E1D0 /* SignUp&LoginScenes */,
-				B86160691BFA64040014E1D0 /* UI Helpers */,
-			);
-			path = "UIKit Ojbects";
-			sourceTree = "<group>";
-		};
-		B861605E1BFA64040014E1D0 /* MainScenes */ = {
-			isa = PBXGroup;
-			children = (
-				B861605F1BFA64040014E1D0 /* Discover.storyboard */,
-				B86160601BFA64040014E1D0 /* Main.storyboard */,
-				B86160611BFA64040014E1D0 /* TabBarViewController.swift */,
-			);
-			path = MainScenes;
-			sourceTree = "<group>";
-		};
-		B86160621BFA64040014E1D0 /* SignUp&LoginScenes */ = {
-			isa = PBXGroup;
-			children = (
-				B86160631BFA64040014E1D0 /* EntryViewController.swift */,
-				B86160641BFA64040014E1D0 /* ForgetPasswordViewController.swift */,
-				B86160651BFA64040014E1D0 /* LogIn.storyboard */,
-				B86160661BFA64040014E1D0 /* LogInSignUpViewController.swift */,
-				B86160671BFA64040014E1D0 /* LoginViewController.swift */,
-				B86160681BFA64040014E1D0 /* SignUpViewController.swift */,
-			);
-			path = "SignUp&LoginScenes";
-			sourceTree = "<group>";
-		};
-		B86160691BFA64040014E1D0 /* UI Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				B861606A1BFA64040014E1D0 /* AlertPanel */,
-				B861606D1BFA64040014E1D0 /* CustomUIElement */,
-				B861606F1BFA64040014E1D0 /* Keyboard */,
-			);
-			path = "UI Helpers";
-			sourceTree = "<group>";
-		};
-		B861606A1BFA64040014E1D0 /* AlertPanel */ = {
-			isa = PBXGroup;
-			children = (
-				B861606B1BFA64040014E1D0 /* InvalidInputAlert.swift */,
-				B861606C1BFA64040014E1D0 /* InvalidInputAlertView.xib */,
-			);
-			path = AlertPanel;
-			sourceTree = "<group>";
-		};
-		B861606D1BFA64040014E1D0 /* CustomUIElement */ = {
-			isa = PBXGroup;
-			children = (
-				B861606E1BFA64040014E1D0 /* UIRadiusButton.swift */,
-			);
-			path = CustomUIElement;
-			sourceTree = "<group>";
-		};
-		B861606F1BFA64040014E1D0 /* Keyboard */ = {
-			isa = PBXGroup;
-			children = (
-				B86160701BFA64040014E1D0 /* Keyboard.swift */,
-			);
-			path = Keyboard;
 			sourceTree = "<group>";
 		};
 		B861607E1BFA640A0014E1D0 /* Utils */ = {
@@ -365,11 +382,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				B861605C1BFA63F90014E1D0 /* LaunchScreen.storyboard in Resources */,
-				B86160721BFA64040014E1D0 /* Main.storyboard in Resources */,
-				B86160711BFA64040014E1D0 /* Discover.storyboard in Resources */,
+				B10EDFD41BFA694600FE8E20 /* Default-568h@2x.png in Resources */,
+				B10EDFB11BFA680A00FE8E20 /* SF-UI-Display-Semibold.otf in Resources */,
+				B10EDFAF1BFA680A00FE8E20 /* Righteous-Regular.ttf in Resources */,
+				B10EDFC71BFA685300FE8E20 /* Main.storyboard in Resources */,
+				B10EDFD01BFA685300FE8E20 /* AlertPanel.xib in Resources */,
+				B10EDFB01BFA680A00FE8E20 /* SF-UI-Display-Medium.otf in Resources */,
 				B861605B1BFA63F90014E1D0 /* Info.plist in Resources */,
-				B861607B1BFA64040014E1D0 /* InvalidInputAlertView.xib in Resources */,
-				B86160761BFA64040014E1D0 /* LogIn.storyboard in Resources */,
+				B10EDFC61BFA685300FE8E20 /* Discover.storyboard in Resources */,
+				B10EDFCB1BFA685300FE8E20 /* LogIn.storyboard in Resources */,
 				B86160551BFA63F30014E1D0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -404,22 +425,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B86160781BFA64040014E1D0 /* LoginViewController.swift in Sources */,
 				B861608B1BFA640A0014E1D0 /* Constants.swift in Sources */,
-				B861607A1BFA64040014E1D0 /* InvalidInputAlert.swift in Sources */,
+				B10EDFCF1BFA685300FE8E20 /* TopAlertView.swift in Sources */,
 				B86160921BFA640A0014E1D0 /* Networking.swift in Sources */,
-				B861607D1BFA64040014E1D0 /* Keyboard.swift in Sources */,
+				B10EDFCC1BFA685300FE8E20 /* LogInSignUpViewController.swift in Sources */,
+				B10EDFCD1BFA685300FE8E20 /* LoginViewController.swift in Sources */,
+				B10EDFD11BFA685300FE8E20 /* UIRadiusButton.swift in Sources */,
+				B10EDFC81BFA685300FE8E20 /* TabBarViewController.swift in Sources */,
 				B861608F1BFA640A0014E1D0 /* MIME.swift in Sources */,
 				B861608D1BFA640A0014E1D0 /* Validation.swift in Sources */,
-				B86160791BFA64040014E1D0 /* SignUpViewController.swift in Sources */,
-				B86160731BFA64040014E1D0 /* TabBarViewController.swift in Sources */,
+				B10EDFD21BFA685300FE8E20 /* Keyboard.swift in Sources */,
+				B10EDFD61BFA6C6100FE8E20 /* ValidationAndTopAlertView.swift in Sources */,
+				B10EDFC91BFA685300FE8E20 /* EntryViewController.swift in Sources */,
 				B86160911BFA640A0014E1D0 /* MultipartUpload.swift in Sources */,
+				B10EDFCA1BFA685300FE8E20 /* ForgetPasswordViewController.swift in Sources */,
+				B10EDFCE1BFA685300FE8E20 /* SignUpViewController.swift in Sources */,
 				B861605A1BFA63F90014E1D0 /* AppDelegate.swift in Sources */,
-				B861607C1BFA64040014E1D0 /* UIRadiusButton.swift in Sources */,
 				B861608E1BFA640A0014E1D0 /* UIImageExtensions.swift in Sources */,
-				B86160751BFA64040014E1D0 /* ForgetPasswordViewController.swift in Sources */,
-				B86160771BFA64040014E1D0 /* LogInSignUpViewController.swift in Sources */,
-				B86160741BFA64040014E1D0 /* EntryViewController.swift in Sources */,
 				B86160931BFA640A0014E1D0 /* TaskCreator.swift in Sources */,
 				B861609C1BFA6EE70014E1D0 /* ZCViewController.swift in Sources */,
 				B861608C1BFA640A0014E1D0 /* UIValidatableTextField.swift in Sources */,
@@ -531,7 +553,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "$(SRCROOT)/Zimcher/Misc/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Zimcher/Resources/Misc/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Zimcher.Zimcher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -542,7 +564,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "$(SRCROOT)/Zimcher/Misc/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Zimcher/Resources/Misc/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Zimcher.Zimcher;
 				PRODUCT_NAME = "$(TARGET_NAME)";

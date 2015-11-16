@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginViewController: UIViewController, InputAlertViewContainer{
+class LoginViewController: ViewControllerWithKBLayoutGuide, ValidationAndTopAlertView{
 
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var passwordLabel: UILabel!
