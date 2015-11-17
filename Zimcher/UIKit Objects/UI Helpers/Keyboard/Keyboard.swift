@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewControllerWithKBLayoutGuide: UIViewController {
+class ViewControllerWithKBLayoutGuide: ZCViewController {
     @IBInspectable var kbLayoutGuide = UILayoutGuide()
     private weak var top: NSLayoutConstraint!
     private weak var height: NSLayoutConstraint!
