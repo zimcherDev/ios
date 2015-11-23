@@ -26,6 +26,15 @@
 		B170316A1BFA7AA5008A8363 /* ValidationAndTopAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17031691BFA7AA5008A8363 /* ValidationAndTopAlertView.swift */; };
 		B170316C1BFAA4F9008A8363 /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B170316B1BFAA4F9008A8363 /* Keyboard.swift */; };
 		B1A750551BFA5308002E92AF /* ZimcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A750541BFA5308002E92AF /* ZimcherTests.swift */; };
+		B81E53B81C02BCA6000FEAFB /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81E53B71C02BCA6000FEAFB /* Utility.swift */; };
+		B81E53BC1C02D0D4000FEAFB /* Me.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B81E53BB1C02D0D4000FEAFB /* Me.storyboard */; };
+		B81E53C41C02D1B9000FEAFB /* SettingTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81E53C31C02D1B9000FEAFB /* SettingTableHeaderView.swift */; };
+		B81E53CA1C02D28F000FEAFB /* SettingTableFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81E53C91C02D28F000FEAFB /* SettingTableFooterView.swift */; };
+		B81E53CD1C02D2B3000FEAFB /* SettingTableCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81E53CB1C02D2B3000FEAFB /* SettingTableCellTableViewCell.swift */; };
+		B81E53CE1C02D2B3000FEAFB /* SettingTableCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B81E53CC1C02D2B3000FEAFB /* SettingTableCellTableViewCell.xib */; };
+		B81E53D01C02D2F2000FEAFB /* SettingTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B81E53CF1C02D2F2000FEAFB /* SettingTableHeaderView.xib */; };
+		B81E53D21C02D31C000FEAFB /* SettingTableFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B81E53D11C02D31C000FEAFB /* SettingTableFooterView.xib */; };
+		B81E53D41C02D38A000FEAFB /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81E53D31C02D38A000FEAFB /* SettingViewController.swift */; };
 		B86160551BFA63F30014E1D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B86160531BFA63F30014E1D0 /* Assets.xcassets */; };
 		B861605A1BFA63F90014E1D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86160571BFA63F90014E1D0 /* AppDelegate.swift */; };
 		B861605C1BFA63F90014E1D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B86160591BFA63F90014E1D0 /* LaunchScreen.storyboard */; };
@@ -74,6 +83,15 @@
 		B1A750501BFA5308002E92AF /* ZimcherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZimcherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1A750541BFA5308002E92AF /* ZimcherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZimcherTests.swift; sourceTree = "<group>"; };
 		B1A750561BFA5308002E92AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B81E53B71C02BCA6000FEAFB /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		B81E53BB1C02D0D4000FEAFB /* Me.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Me.storyboard; sourceTree = "<group>"; };
+		B81E53C31C02D1B9000FEAFB /* SettingTableHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTableHeaderView.swift; sourceTree = "<group>"; };
+		B81E53C91C02D28F000FEAFB /* SettingTableFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTableFooterView.swift; sourceTree = "<group>"; };
+		B81E53CB1C02D2B3000FEAFB /* SettingTableCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTableCellTableViewCell.swift; sourceTree = "<group>"; };
+		B81E53CC1C02D2B3000FEAFB /* SettingTableCellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingTableCellTableViewCell.xib; sourceTree = "<group>"; };
+		B81E53CF1C02D2F2000FEAFB /* SettingTableHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingTableHeaderView.xib; sourceTree = "<group>"; };
+		B81E53D11C02D31C000FEAFB /* SettingTableFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingTableFooterView.xib; sourceTree = "<group>"; };
+		B81E53D31C02D38A000FEAFB /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		B86160531BFA63F30014E1D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B86160571BFA63F90014E1D0 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B86160581BFA63F90014E1D0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -121,6 +139,7 @@
 		B10EDFB21BFA685300FE8E20 /* UIKit Objects */ = {
 			isa = PBXGroup;
 			children = (
+				B81E53B31C02BAA2000FEAFB /* Me */,
 				B861609E1BFA73340014E1D0 /* BaseViewController */,
 				B10EDFB31BFA685300FE8E20 /* MainScenes */,
 				B10EDFB71BFA685300FE8E20 /* SignUp&LoginScenes */,
@@ -210,7 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				B10EDFB21BFA685300FE8E20 /* UIKit Objects */,
-				B861607E1BFA640A0014E1D0 /* Utils */,
+				B861607E1BFA640A0014E1D0 /* Utility */,
 				B86160561BFA63F90014E1D0 /* Misc */,
 				B86160521BFA63F30014E1D0 /* Resources */,
 			);
@@ -225,6 +244,49 @@
 			);
 			path = ZimcherTests;
 			sourceTree = "<group>";
+		};
+		B81E53B31C02BAA2000FEAFB /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				B81E53BB1C02D0D4000FEAFB /* Me.storyboard */,
+				B81E53B41C02BAD4000FEAFB /* Setting */,
+			);
+			name = Me;
+			path = "/Users/TianhangYang/myWorks/Zimcher2015/Zimcher/UIKit Objects/Me";
+			sourceTree = "<absolute>";
+		};
+		B81E53B41C02BAD4000FEAFB /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				B81E53BA1C02D028000FEAFB /* UpdatePassword */,
+				B81E53B91C02CFF4000FEAFB /* UpdateEmail */,
+				B81E53C31C02D1B9000FEAFB /* SettingTableHeaderView.swift */,
+				B81E53CF1C02D2F2000FEAFB /* SettingTableHeaderView.xib */,
+				B81E53C91C02D28F000FEAFB /* SettingTableFooterView.swift */,
+				B81E53D11C02D31C000FEAFB /* SettingTableFooterView.xib */,
+				B81E53CB1C02D2B3000FEAFB /* SettingTableCellTableViewCell.swift */,
+				B81E53CC1C02D2B3000FEAFB /* SettingTableCellTableViewCell.xib */,
+				B81E53D31C02D38A000FEAFB /* SettingViewController.swift */,
+			);
+			name = Setting;
+			path = "/Users/TianhangYang/myWorks/Zimcher2015/Zimcher/UIKit Objects/Me/Setting";
+			sourceTree = "<absolute>";
+		};
+		B81E53B91C02CFF4000FEAFB /* UpdateEmail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = UpdateEmail;
+			path = "/Users/TianhangYang/myWorks/Zimcher2015/Zimcher/UIKit Objects/Me/Setting/UpdateEmail";
+			sourceTree = "<absolute>";
+		};
+		B81E53BA1C02D028000FEAFB /* UpdatePassword */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = UpdatePassword;
+			path = "/Users/TianhangYang/myWorks/Zimcher2015/Zimcher/UIKit Objects/Me/Setting/UpdatePassword";
+			sourceTree = "<absolute>";
 		};
 		B86160521BFA63F30014E1D0 /* Resources */ = {
 			isa = PBXGroup;
@@ -247,18 +309,20 @@
 			path = Resources/Misc;
 			sourceTree = "<group>";
 		};
-		B861607E1BFA640A0014E1D0 /* Utils */ = {
+		B861607E1BFA640A0014E1D0 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
-				B861607F1BFA640A0014E1D0 /* Constants.swift */,
 				B86160801BFA640A0014E1D0 /* EntryValidation */,
 				B86160831BFA640A0014E1D0 /* Extensions */,
 				B86160851BFA640A0014E1D0 /* MIME.swift */,
 				B86160861BFA640A0014E1D0 /* MixedStream.swift */,
+				B861607F1BFA640A0014E1D0 /* Constants.swift */,
+				B81E53B71C02BCA6000FEAFB /* Utility.swift */,
 				B86160871BFA640A0014E1D0 /* NetworkingHelper */,
 			);
-			path = Utils;
-			sourceTree = "<group>";
+			name = Utility;
+			path = /Users/TianhangYang/myWorks/Zimcher2015/Zimcher/Utility;
+			sourceTree = "<absolute>";
 		};
 		B86160801BFA640A0014E1D0 /* EntryValidation */ = {
 			isa = PBXGroup;
@@ -378,15 +442,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				B861605C1BFA63F90014E1D0 /* LaunchScreen.storyboard in Resources */,
+				B81E53D21C02D31C000FEAFB /* SettingTableFooterView.xib in Resources */,
 				B10EDFD41BFA694600FE8E20 /* Default-568h@2x.png in Resources */,
 				B10EDFB11BFA680A00FE8E20 /* SF-UI-Display-Semibold.otf in Resources */,
 				B10EDFAF1BFA680A00FE8E20 /* Righteous-Regular.ttf in Resources */,
 				B10EDFC71BFA685300FE8E20 /* Main.storyboard in Resources */,
 				B10EDFD01BFA685300FE8E20 /* AlertPanel.xib in Resources */,
 				B10EDFB01BFA680A00FE8E20 /* SF-UI-Display-Medium.otf in Resources */,
+				B81E53CE1C02D2B3000FEAFB /* SettingTableCellTableViewCell.xib in Resources */,
+				B81E53D01C02D2F2000FEAFB /* SettingTableHeaderView.xib in Resources */,
 				B10EDFC61BFA685300FE8E20 /* Discover.storyboard in Resources */,
 				B10EDFCB1BFA685300FE8E20 /* LogIn.storyboard in Resources */,
 				B86160551BFA63F30014E1D0 /* Assets.xcassets in Resources */,
+				B81E53BC1C02D0D4000FEAFB /* Me.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,17 +491,22 @@
 				B861608B1BFA640A0014E1D0 /* Constants.swift in Sources */,
 				B10EDFCF1BFA685300FE8E20 /* TopAlertView.swift in Sources */,
 				B86160921BFA640A0014E1D0 /* Networking.swift in Sources */,
+				B81E53D41C02D38A000FEAFB /* SettingViewController.swift in Sources */,
 				B10EDFCC1BFA685300FE8E20 /* LogInSignUpViewController.swift in Sources */,
 				B10EDFCD1BFA685300FE8E20 /* LoginViewController.swift in Sources */,
+				B81E53CA1C02D28F000FEAFB /* SettingTableFooterView.swift in Sources */,
 				B10EDFD11BFA685300FE8E20 /* UIRadiusButton.swift in Sources */,
 				B10EDFC81BFA685300FE8E20 /* TabBarViewController.swift in Sources */,
 				B861608F1BFA640A0014E1D0 /* MIME.swift in Sources */,
 				B861608D1BFA640A0014E1D0 /* Validation.swift in Sources */,
 				B10EDFC91BFA685300FE8E20 /* EntryViewController.swift in Sources */,
 				B86160911BFA640A0014E1D0 /* MultipartUpload.swift in Sources */,
+				B81E53CD1C02D2B3000FEAFB /* SettingTableCellTableViewCell.swift in Sources */,
 				B10EDFCA1BFA685300FE8E20 /* ForgetPasswordViewController.swift in Sources */,
 				B10EDFCE1BFA685300FE8E20 /* SignUpViewController.swift in Sources */,
+				B81E53C41C02D1B9000FEAFB /* SettingTableHeaderView.swift in Sources */,
 				B861605A1BFA63F90014E1D0 /* AppDelegate.swift in Sources */,
+				B81E53B81C02BCA6000FEAFB /* Utility.swift in Sources */,
 				B861608E1BFA640A0014E1D0 /* UIImageExtensions.swift in Sources */,
 				B86160931BFA640A0014E1D0 /* TaskCreator.swift in Sources */,
 				B170316C1BFAA4F9008A8363 /* Keyboard.swift in Sources */,
@@ -480,6 +553,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -502,6 +576,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -524,6 +599,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -539,6 +615,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -548,6 +625,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "$(SRCROOT)/Zimcher/Resources/Misc/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Zimcher.Zimcher;
@@ -559,6 +637,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "$(SRCROOT)/Zimcher/Resources/Misc/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Zimcher.Zimcher;
