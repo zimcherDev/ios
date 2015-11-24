@@ -8,16 +8,21 @@
 
 import UIKit
 
-class UIRadiusButton: UIButton {
+extension UIButton {
+    @IBInspectable var cornerRadius: CGFloat {
+        get { return layer.cornerRadius }
+        set { layer.cornerRadius = newValue }
+    }
+}
 
+class RadiusButton: UIButton {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        layer.cornerRadius = CONSTANT.UI.LOGIN_BUTTON_CORNER_RADIUS
+        cornerRadius = CONSTANT.UI.LOGIN_BUTTON_CORNER_RADIUS
     }
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        layer.cornerRadius = CONSTANT.UI.LOGIN_BUTTON_CORNER_RADIUS
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        cornerRadius = CONSTANT.UI.LOGIN_BUTTON_CORNER_RADIUS
     }
-
 }

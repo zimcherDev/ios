@@ -26,6 +26,8 @@
 		B170316A1BFA7AA5008A8363 /* ValidationAndTopAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17031691BFA7AA5008A8363 /* ValidationAndTopAlertView.swift */; };
 		B170316C1BFAA4F9008A8363 /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B170316B1BFAA4F9008A8363 /* Keyboard.swift */; };
 		B1A750551BFA5308002E92AF /* ZimcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A750541BFA5308002E92AF /* ZimcherTests.swift */; };
+		B1CAFDA51C03BC72005CFBBB /* UIStackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CAFDA31C03BC72005CFBBB /* UIStackViewController.swift */; };
+		B1CAFDA61C03BC72005CFBBB /* UIStackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1CAFDA41C03BC72005CFBBB /* UIStackViewController.xib */; };
 		B86160551BFA63F30014E1D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B86160531BFA63F30014E1D0 /* Assets.xcassets */; };
 		B861605A1BFA63F90014E1D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86160571BFA63F90014E1D0 /* AppDelegate.swift */; };
 		B861605C1BFA63F90014E1D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B86160591BFA63F90014E1D0 /* LaunchScreen.storyboard */; };
@@ -74,6 +76,8 @@
 		B1A750501BFA5308002E92AF /* ZimcherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZimcherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1A750541BFA5308002E92AF /* ZimcherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZimcherTests.swift; sourceTree = "<group>"; };
 		B1A750561BFA5308002E92AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1CAFDA31C03BC72005CFBBB /* UIStackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStackViewController.swift; sourceTree = "<group>"; };
+		B1CAFDA41C03BC72005CFBBB /* UIStackViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UIStackViewController.xib; sourceTree = "<group>"; };
 		B86160531BFA63F30014E1D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B86160571BFA63F90014E1D0 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B86160581BFA63F90014E1D0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -176,6 +180,8 @@
 			isa = PBXGroup;
 			children = (
 				B10EDFC31BFA685300FE8E20 /* UIRadiusButton.swift */,
+				B1CAFDA31C03BC72005CFBBB /* UIStackViewController.swift */,
+				B1CAFDA41C03BC72005CFBBB /* UIStackViewController.xib */,
 			);
 			path = CustomUIElement;
 			sourceTree = "<group>";
@@ -382,6 +388,7 @@
 				B10EDFB11BFA680A00FE8E20 /* SF-UI-Display-Semibold.otf in Resources */,
 				B10EDFAF1BFA680A00FE8E20 /* Righteous-Regular.ttf in Resources */,
 				B10EDFC71BFA685300FE8E20 /* Main.storyboard in Resources */,
+				B1CAFDA61C03BC72005CFBBB /* UIStackViewController.xib in Resources */,
 				B10EDFD01BFA685300FE8E20 /* AlertPanel.xib in Resources */,
 				B10EDFB01BFA680A00FE8E20 /* SF-UI-Display-Medium.otf in Resources */,
 				B10EDFC61BFA685300FE8E20 /* Discover.storyboard in Resources */,
@@ -425,6 +432,7 @@
 				B86160921BFA640A0014E1D0 /* Networking.swift in Sources */,
 				B10EDFCC1BFA685300FE8E20 /* LogInSignUpViewController.swift in Sources */,
 				B10EDFCD1BFA685300FE8E20 /* LoginViewController.swift in Sources */,
+				B1CAFDA51C03BC72005CFBBB /* UIStackViewController.swift in Sources */,
 				B10EDFD11BFA685300FE8E20 /* UIRadiusButton.swift in Sources */,
 				B10EDFC81BFA685300FE8E20 /* TabBarViewController.swift in Sources */,
 				B861608F1BFA640A0014E1D0 /* MIME.swift in Sources */,
