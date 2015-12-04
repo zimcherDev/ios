@@ -92,7 +92,7 @@ struct Networking {
             switch type {
             case .MultipartFormData:
                 let d = data as! Multipart
-                return d.contentLength >= CONSTANT.ENDPOINT.THRESHOLD_SIZE_FOR_USING_STREAM ? d.stream() : d.data
+                return d.contentLength >= ENDPOINT.THRESHOLD_SIZE_FOR_USING_STREAM ? d.stream() : d.data
             default: return self.data as! NSData
             }
         }

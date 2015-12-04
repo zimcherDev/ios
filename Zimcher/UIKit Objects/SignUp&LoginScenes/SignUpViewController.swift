@@ -9,49 +9,57 @@
 import UIKit
 
 class SignUpViewController: ViewControllerWithKBLayoutGuide, ValidationAndTopAlertView{
-    //@IBOutlet weak var termsToBottom: NSLayoutConstraint!
     @IBOutlet weak var termsView: UIStackView!
 
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var emailLabel: UILabel!
-    @IBOutlet weak var passwordLabel: UILabel!
-    @IBOutlet weak var nameInput: UIValidatableTextField!
-    @IBOutlet weak var emailInput: UIValidatableTextField!
-    @IBOutlet weak var passwordInput: UIValidatableTextField!
-    
+    @IBOutlet weak var tableView: TableViewWithIntrinsicSize!
     
     struct LOCAL_CONSTANT {
         static let TERMS_TO_BOTTOM: CGFloat = 15
     }
     
+    var entryField: EntryField!
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-        //NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardFrameWillChange:", name: UIKeyboardWillChangeFrameNotification , object: view.window)
         
+        entryField = EntryField(tableView: tableView)
+        entryField.headerFooterHeight = 0
+
         navigationItem.leftBarButtonItem?.title = ""
         kbLayoutGuide.topAnchor.constraintEqualToAnchor(termsView.bottomAnchor, constant: LOCAL_CONSTANT.TERMS_TO_BOTTOM).active = true
-        setupValidatables()
+        
+        entryField.feedData(generateData())
     }
-    
-    func setupValidatables()
+
+    private func generateData() -> [EntryFieldData]
     {
-        nameInput.validator = IsValid.userName
-        emailInput.validator = IsValid.email
-        passwordInput.validator = IsValid.password
+        var r = [EntryFieldData]()
+        var basic0 = BasicEntryFieldData()
+        basic0.promptText = "FeelsBadMan"
+        basic0.placeholderText = "I know that feel bro"
+        basic0.onSubmitCallback = {[weak self] con in
+            let f = (OnSubmitCallbackGenerator.TextFieldValidation(IsValid.userName))
+            let r = f(con)
+            if !r{
+                self!.showTopAlert("alert")
+            }
+            return r
+        }
+        var basic1 = BasicEntryFieldData()
+        basic1.promptText = "Hungry"
+        
+        r.append(basic0)
+        r.append(basic1)
+        r.append(basic1)
+        return r
     }
     
     
     @IBAction func donePressed() {
         
-        let inp: [Validatable] = [nameInput, emailInput, passwordInput]
-        
-        guard validate(inp) else { return }
-        Networking.userRegisterWithUserJSON(payload: ["userName": nameInput.text!, "email":emailInput.text!, "password":passwordInput.text!]) { data, response, error in
-            
-        }
+        guard entryField.onSubmitCallback() else { return }
+        //Networking.userRegisterWithUserJSON(payload: ["userName": nameInput.text!, "email":emailInput.text!, "password":passwordInput.text!]) { data, response, error in }
         //stub
     }
 }

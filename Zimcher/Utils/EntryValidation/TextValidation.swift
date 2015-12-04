@@ -9,14 +9,15 @@
 import Foundation
 
 struct IsValid {
+    typealias TextValidatorType = (String)->Bool
     private static func validationCreator(filterString: String) -> (input: String) -> Bool
     {
         let predicate = NSPredicate(format: "SELF MATCHES %@", filterString)
         return { predicate.evaluateWithObject($0) }
     }
 
-    static let email = IsValid.validationCreator(CONSTANT.VALIDATION.EMAIL_FILTER)
-    static let userName = IsValid.validationCreator(CONSTANT.VALIDATION.USER_NAME_ALLOWED_CHARS)
+    static let email = IsValid.validationCreator(Validation.EMAIL_FILTER)
+    static let userName = IsValid.validationCreator(Validation.USER_NAME_ALLOWED_CHARS)
     
     static func password(input: String) -> Bool
     {
@@ -24,7 +25,7 @@ struct IsValid {
     }
     
     //used for textfields etc.
-    static func hasValidInput(text: String?, @noescape validator: (String)->Bool) -> Bool
+    static func hasValidInput(text: String?, @noescape validator: TextValidatorType) -> Bool
     {
         if let t = text?.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet()) {
             return t == "" ? false : validator(t)

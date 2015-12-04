@@ -66,14 +66,14 @@ extension Networking {
     // MARK: User related
     
 	//@warn_unused_result(message="Did you forget to call `resume` on the task?")
-    static let userRegisterWithUserJSON = Networking.createTargetFunction(CONSTANT.ENDPOINT.USER.REGISTER)
+    static let userRegisterWithUserJSON = Networking.createTargetFunction(ENDPOINT.USER.REGISTER)
     
 	//@warn_unused_result(message="Did you forget to call `resume` on the task?")
-    static let userLoginWithUserJSON = Networking.createTargetFunction(CONSTANT.ENDPOINT.USER.FIND_BY_EMAIL)
+    static let userLoginWithUserJSON = Networking.createTargetFunction(ENDPOINT.USER.FIND_BY_EMAIL)
     
     // MARK: Media upload
-    static let mediaUploadWithMultipartFormData = Networking.createTargetFunction(CONSTANT.ENDPOINT.MEDIA.UPLOAD)
+    static let mediaUploadWithMultipartFormData = Networking.createTargetFunction(ENDPOINT.MEDIA.UPLOAD)
     
-    static let getAllMediaInfo = Networking.createTargetFunction(CONSTANT.ENDPOINT.MEDIA.ALL_VIDEOS)
+    static let getAllMediaInfo = Networking.createTargetFunction(ENDPOINT.MEDIA.ALL_VIDEOS)
 }
     
