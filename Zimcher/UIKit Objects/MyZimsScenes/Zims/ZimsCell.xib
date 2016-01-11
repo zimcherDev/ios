@@ -1,18 +1,40 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ZimsCell" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ZimsCell" customModule="Zimcher" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="palm" translatesAutoresizingMaskIntoConstraints="NO" id="a3c-ie-5Ue">
+                        <rect key="frame" x="20" y="6" width="48" height="143.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="48" id="ijn-KE-hPL"/>
+                            <constraint firstAttribute="height" constant="48" id="nbd-d6-IF9"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="a3c-ie-5Ue" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="KNA-4P-c7a"/>
+                    <constraint firstAttribute="bottom" secondItem="a3c-ie-5Ue" secondAttribute="bottom" constant="6" id="UhM-dN-QCn"/>
+                    <constraint firstItem="a3c-ie-5Ue" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="aLq-O0-CC2"/>
+                    <constraint firstItem="a3c-ie-5Ue" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="wAN-Zp-rkU"/>
+                </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="zimImgView" destination="a3c-ie-5Ue" id="O98-EB-PuU"/>
+            </connections>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="palm" width="138" height="143"/>
+    </resources>
 </document>

@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "idiom" : "universal",
+      "filename" : "iconVolume.pdf"
+    }
+  ],
+  "info" : {
+    "version" : "1",
+    "author" : "zeplin"
+  }
+}

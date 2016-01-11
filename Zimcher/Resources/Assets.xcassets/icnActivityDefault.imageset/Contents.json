@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "idiom" : "universal",
+      "filename" : "icnActivityDefault.pdf"
+    }
+  ],
+  "info" : {
+    "version" : "1",
+    "author" : "zeplin"
+  }
+}

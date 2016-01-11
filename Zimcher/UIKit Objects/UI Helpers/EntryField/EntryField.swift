@@ -24,7 +24,7 @@ class TableViewWithIntrinsicSize: UITableView {
 class EntryField: NSObject, UITableViewDelegate, UITableViewDataSource {
     unowned let tableView: TableViewWithIntrinsicSize
     
-    var headerFooterHeight = CGFloat(2) { didSet { tableView.reloadData() } }
+    var headerFooterHeight = CGFloat(0) { didSet { tableView.reloadData() } }
     var headerFooterColor = UIColor.clearColor() { didSet { tableView.reloadData() }}
     
     var datasource = [EntryFieldData]()
@@ -60,9 +60,10 @@ class EntryField: NSObject, UITableViewDelegate, UITableViewDataSource {
         //stub
     {
         return datasource.flatMap { $0 as? HasOnSubmitCallback }
-            .filter{ $0.cell is BasicEntryCell } // STUB
+            .filter{ $0.cell is TextEntryCell
+        } // STUB
             .reduce(true) { result, i in
-                result ? i.onSubmitCallback?((i.cell as! BasicEntryCell).textInput) ?? true : false }
+                result ? i.onSubmitCallback?((i.cell as! TextEntryCell).textInput) ?? true : false }
     }
     
     private func registerCell(data: EntryFieldData)

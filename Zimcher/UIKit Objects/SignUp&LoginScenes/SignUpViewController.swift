@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SignUpViewController: ViewControllerWithKBLayoutGuide, ValidationAndTopAlertView{
+class SignUpViewController: ViewControllerWithKBLayoutGuide, TopAlertViewContainer{
     @IBOutlet weak var termsView: UIStackView!
 
     @IBOutlet weak var tableView: TableViewWithIntrinsicSize!
@@ -24,7 +24,6 @@ class SignUpViewController: ViewControllerWithKBLayoutGuide, ValidationAndTopAle
         super.viewDidLoad()
         
         entryField = EntryField(tableView: tableView)
-        entryField.headerFooterHeight = 0
 
         navigationItem.leftBarButtonItem?.title = ""
         kbLayoutGuide.topAnchor.constraintEqualToAnchor(termsView.bottomAnchor, constant: LOCAL_CONSTANT.TERMS_TO_BOTTOM).active = true
@@ -34,25 +33,10 @@ class SignUpViewController: ViewControllerWithKBLayoutGuide, ValidationAndTopAle
 
     private func generateData() -> [EntryFieldData]
     {
-        var r = [EntryFieldData]()
-        var basic0 = BasicEntryFieldData()
-        basic0.promptText = "FeelsBadMan"
-        basic0.placeholderText = "I know that feel bro"
-        basic0.onSubmitCallback = {[weak self] con in
-            let f = (OnSubmitCallbackGenerator.TextFieldValidation(IsValid.userName))
-            let r = f(con)
-            if !r{
-                self!.showTopAlert("alert")
-            }
-            return r
-        }
-        var basic1 = BasicEntryFieldData()
-        basic1.promptText = "Hungry"
+        let r = [ReusableTextEntryFieldData.usernameEntryFieldData, ReusableTextEntryFieldData.emailEntryFieldData, ReusableTextEntryFieldData.passwordEntryFieldData]
         
-        r.append(basic0)
-        r.append(basic1)
-        r.append(basic1)
-        return r
+        r.forEach {[weak self] in $0.onFailCallback = self!.showTopAlert }
+        return r.map { $0 as EntryFieldData }
     }
     
     

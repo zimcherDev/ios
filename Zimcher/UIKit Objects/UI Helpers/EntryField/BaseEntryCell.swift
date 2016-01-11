@@ -11,7 +11,8 @@ class BaseEntryCell: UITableViewCell {
         }
     }
     private var separatorHeight: NSLayoutConstraint!
-    
+   
+    //A hard constraint on the height of the cell
     var cellHeight: CGFloat? {
         didSet {
             guard cellHeight != oldValue else { return }
@@ -46,12 +47,10 @@ class BaseEntryCell: UITableViewCell {
         separator.bottomAnchor.constraintEqualToAnchor(contentView.bottomAnchor).active = true
         separator.backgroundColor = COLORSCHEME.ENTRY_FIELD.SEPARATOR_BG
         
-        separatorHeight = separator.heightAnchor.constraintEqualToConstant(2)
+        separatorHeight = separator.heightAnchor.constraintEqualToConstant(UI.ENTRY_FIELD.SEPARATOR_HEIGHT)
         separatorHeight.active = true
         
         cellHeightConstraint = contentView.heightAnchor.constraintEqualToConstant(0)
-        //cellHeightConstraint.priority = 999
-        //WTF Apple?
     }
     
     required init?(coder aDecoder: NSCoder) {

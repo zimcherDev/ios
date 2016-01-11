@@ -8,6 +8,11 @@
 
 import UIKit
 
-class NavigationVCwithStatusBarHidden: UINavigationViewController {
+class NavigationVCwithStatusBarHidden: UINavigationController {
+    
+    override func prefersStatusBarHidden() -> Bool {
+        return true
+    }
 
+    
 }

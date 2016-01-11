@@ -1,10 +1,3 @@
-//
-//  SettingNavigationViewController.swift
-//  Zimcher
-//
-//  Created by Weiyu Huang on 12/5/15.
-//  Copyright © 2015 Zimcher. All rights reserved.
-//
 
 import UIKit
 
@@ -12,24 +5,12 @@ class SettingNavigationViewController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        navigationBar.setBackgroundImage(UIImage.imageFromColorAndSize(COLORSCHEME.SETTINGS.NAVIGATION_BAR_BG, size: CGSize(width: 1, height: 1)), forBarMetrics: .Default)
+        
+        navigationBar.translucent = false
+        navigationBar.shadowImage = UIImage()
+        navigationBar.tintColor = COLORSCHEME.NAVIGATION_BAR.TINT
+        navigationBar.titleTextAttributes?[NSFontAttributeName] = FONTS.SF_MEDIUM.fontWithSize(20)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

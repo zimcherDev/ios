@@ -6,25 +6,6 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="GQ2-Un-jIC">
-            <objects>
-                <viewController id="m7U-NK-mFF" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="F3x-eg-SqO"/>
-                        <viewControllerLayoutGuide type="bottom" id="WId-8c-EiO"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="zyt-aV-RMy">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" systemItem="contacts" id="HwS-eO-pQQ"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="DHH-uG-Mmt" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1259" y="-386"/>
-        </scene>
-        <!--View Controller-->
         <scene sceneID="i89-wm-eOX">
             <objects>
                 <viewController id="xLJ-GO-7pA" sceneMemberID="viewController">
@@ -76,23 +57,49 @@
                         <color key="tintColor" red="1" green="0.99496940509999998" blue="0.97967275460000003" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="m7U-NK-mFF" kind="relationship" relationship="viewControllers" id="gfW-Pn-wdJ"/>
+                        <segue destination="ewF-Nf-ySZ" kind="relationship" relationship="viewControllers" id="YKU-Rd-veY"/>
                         <segue destination="ptG-1s-vxk" kind="relationship" relationship="viewControllers" id="tym-Tq-f2J"/>
+                        <segue destination="Sfe-Nr-Bho" kind="relationship" relationship="viewControllers" id="8R2-lg-yME"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GEe-gU-3pW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="142" y="-1204"/>
+            <point key="canvasLocation" x="227" y="-1203"/>
+        </scene>
+        <!--Storyboard Reference-->
+        <scene sceneID="rmZ-bZ-JCp">
+            <objects>
+                <viewControllerPlaceholder id="Sfe-Nr-Bho" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="bkgcamera" id="dSt-xv-YOE"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lgp-G7-bqc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="315.5" y="-670"/>
         </scene>
         <!--Discover-->
         <scene sceneID="FNn-Ot-dJ8">
             <objects>
                 <viewControllerPlaceholder storyboardName="Discover" id="ptG-1s-vxk" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="t6P-oX-JHQ"/>
+                    <tabBarItem key="tabBarItem" title="Discover" image="iconDiscover" selectedImage="iconDiscover" id="t6P-oX-JHQ"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PvO-1O-gaj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-29.5" y="-679"/>
+            <point key="canvasLocation" x="-447.5" y="-760"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="Gfc-4M-AJU">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" id="ewF-Nf-ySZ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="My Zims" image="icnHome" selectedImage="icnHome" id="qEV-BS-JnA"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H7L-Sh-wYL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-592" y="-762"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bkgcamera" width="74" height="45"/>
+        <image name="icnHome" width="25" height="25"/>
+        <image name="iconDiscover" width="18" height="26"/>
+    </resources>
 </document>

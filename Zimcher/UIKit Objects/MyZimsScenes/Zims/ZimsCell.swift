@@ -9,10 +9,12 @@
 import UIKit
 
 class ZimsCell: UITableViewCell {
+    @IBOutlet weak var zimImgView: UIImageView!
 
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
     }
 
     override func setSelected(selected: Bool, animated: Bool) {

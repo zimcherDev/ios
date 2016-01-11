@@ -10,7 +10,7 @@ import Foundation
 
 struct IsValid {
     typealias TextValidatorType = (String)->Bool
-    private static func validationCreator(filterString: String) -> (input: String) -> Bool
+    private static func validationCreator(filterString: String) -> TextValidatorType
     {
         let predicate = NSPredicate(format: "SELF MATCHES %@", filterString)
         return { predicate.evaluateWithObject($0) }
@@ -25,18 +25,12 @@ struct IsValid {
     }
     
     //used for textfields etc.
-    static func hasValidInput(text: String?, @noescape validator: TextValidatorType) -> Bool
+    static func hasValidInput(@autoclosure text: ()->String?, @noescape validator: TextValidatorType) -> Bool
     {
-        if let t = text?.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet()) {
-            return t == "" ? false : validator(t)
+        if let t = text()?.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet()) {
+            return t != "" && validator(t)
         }
         return false
     }
     
-}
-
-protocol Validatable {
-    var validatee: String? {get}
-    var validator: (String)-> Bool {get}
-    var invalidMessage: String {get}
 }

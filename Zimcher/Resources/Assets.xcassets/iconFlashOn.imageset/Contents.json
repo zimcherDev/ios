@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "idiom" : "universal",
+      "filename" : "iconFlashOn.pdf"
+    }
+  ],
+  "info" : {
+    "version" : "1",
+    "author" : "zeplin"
+  }
+}

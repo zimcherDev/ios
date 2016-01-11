@@ -8,24 +8,27 @@
 
 import UIKit
 
-class ForgetPasswordViewController: ViewControllerWithKBLayoutGuide, ValidationAndTopAlertView{
+class ForgetPasswordViewController: ViewControllerWithKBLayoutGuide, TopAlertViewContainer{
 
-    @IBOutlet weak var emailLabel: UILabel!
-    @IBOutlet weak var emailInput: UIValidatableTextField!
+    @IBOutlet weak var tableView: TableViewWithIntrinsicSize!
+    
+    var entryField: EntryField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-        setupValidatables()
+        entryField = EntryField(tableView: tableView)
+        entryField.feedData(generateData())
     }
     
-    func setupValidatables()
+    private func generateData() -> [EntryFieldData]
     {
-        emailInput.validator = IsValid.email
+        let data = ReusableTextEntryFieldData.emailEntryFieldData
+        data.onFailCallback = showTopAlert
+        
+        return [data]
     }
-    
     
     @IBAction func donePressed() {
-        guard validate([emailInput]) else { return }
+        guard entryField.onSubmitCallback() else { return }
     }
 }

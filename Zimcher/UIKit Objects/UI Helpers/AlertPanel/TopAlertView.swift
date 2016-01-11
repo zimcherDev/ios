@@ -15,7 +15,7 @@ protocol TopAlertViewContainer: class {
 }
 
 extension TopAlertViewContainer{
-    func showTopAlert(alertString: String)
+    func showTopAlert(alertMessage: String)
     {
         let v = TopAlertView.sharedView
         
@@ -26,12 +26,9 @@ extension TopAlertViewContainer{
             view.trailingAnchor.constraintEqualToAnchor(v.trailingAnchor).active = true
         }
         
-        v.show(alertString)
+        v.show(alertMessage)
     }
-    
- 
 }
-
 
 
 

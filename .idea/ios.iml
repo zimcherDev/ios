@@ -18,23 +18,29 @@
       <sourceFolder url="file://$MODULE_DIR$/Zimcher/UIKit Objects/MainScenes/Discover.storyboard" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Zimcher/UIKit Objects/MainScenes/Main.storyboard" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Zimcher/UIKit Objects/MainScenes/TabBarViewController.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Zimcher/UIKit Objects/SettingScenes/SettingNavigationViewController.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Zimcher/UIKit Objects/SettingScenes/Settings.storyboard" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Zimcher/UIKit Objects/SettingScenes/SettingsViewController.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Zimcher/UIKit Objects/SignUp&amp;LoginScenes/EntryViewController.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Zimcher/UIKit Objects/SignUp&amp;LoginScenes/ForgetPasswordViewController.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Zimcher/UIKit Objects/SignUp&amp;LoginScenes/LogIn.storyboard" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Zimcher/UIKit Objects/SignUp&amp;LoginScenes/LogInSignUpViewController.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Zimcher/UIKit Objects/SignUp&amp;LoginScenes/LoginViewController.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Zimcher/UIKit Objects/SignUp&amp;LoginScenes/SignUpViewController.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Zimcher/UIKit Objects/SignUp&amp;LoginScenes/ValidationAndTopAlertView.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Zimcher/UIKit Objects/UI Helpers/AlertPanel/AlertPanel.xib" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Zimcher/UIKit Objects/UI Helpers/AlertPanel/TopAlertView.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Zimcher/UIKit Objects/UI Helpers/Cell/SelectableCell.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Zimcher/UIKit Objects/UI Helpers/Cell/TextEntryCell.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Zimcher/UIKit Objects/UI Helpers/CustomUIElement/TextFieldWithPlaceholderAlignment.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Zimcher/UIKit Objects/UI Helpers/CustomUIElement/UIRadiusButton.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Zimcher/UIKit Objects/UI Helpers/EntryField/BaseEntryCell.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Zimcher/UIKit Objects/UI Helpers/EntryField/EntryField.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Zimcher/UIKit Objects/UI Helpers/Keyboard/Keyboard.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Zimcher/UIKit Objects/UI Helpers/Model/EntryFieldData.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Zimcher/UIKit Objects/UI Helpers/Model/SelectableCellData.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Zimcher/UIKit Objects/UI Helpers/OnSubmitCallbackGenerator.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Zimcher/Utils/Constants.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Zimcher/Utils/EntryValidation/UIValidatableTextField.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Zimcher/Utils/EntryValidation/Validation.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Zimcher/Utils/EntryValidation/TextValidation.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Zimcher/Utils/Extensions/UIImageExtensions.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Zimcher/Utils/MIME.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Zimcher/Utils/MixedStream.swift" isTestSource="false" />

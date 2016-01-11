@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "idiom" : "universal",
+      "filename" : "icnMe.pdf"
+    }
+  ],
+  "info" : {
+    "version" : "1",
+    "author" : "zeplin"
+  }
+}

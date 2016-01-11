@@ -17,4 +17,20 @@ extension UIImage {
         UIGraphicsEndImageContext()
         return image
     }
+    
+    static func imageFromView(view: UIView) -> UIImage
+    {
+        UIGraphicsBeginImageContext(view.bounds.size)
+        view.layer.renderInContext(UIGraphicsGetCurrentContext()!)
+        let img = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return img
+    }
+    
+    func changeOrientation(orientation: UIImageOrientation) -> UIImage
+    {
+        return UIImage(CGImage: CGImage!, scale: 1, orientation: orientation)
+    }
+    
 }
+

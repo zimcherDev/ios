@@ -1,7 +1,274 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="EPG-sc-aaL">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
-    <scenes/>
+    <customFonts key="customFonts">
+        <mutableArray key="SF-UI-Display-Medium.otf">
+            <string>SFUIDisplay-Medium</string>
+            <string>SFUIDisplay-Medium</string>
+            <string>SFUIDisplay-Medium</string>
+            <string>SFUIDisplay-Medium</string>
+            <string>SFUIDisplay-Medium</string>
+            <string>SFUIDisplay-Medium</string>
+            <string>SFUIDisplay-Medium</string>
+            <string>SFUIDisplay-Medium</string>
+            <string>SFUIDisplay-Medium</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ypg-Fi-mpa">
+            <objects>
+                <viewController id="EPG-sc-aaL" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZoQ-Io-HRP"/>
+                        <viewControllerLayoutGuide type="bottom" id="ydN-cq-dbQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Zj2-QA-Ijc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="53m-nC-UxH">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <connections>
+                                    <segue destination="gCJ-jg-hhG" kind="embed" id="IfE-Wf-x3c"/>
+                                </connections>
+                            </containerView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LMW-Bg-sEi">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="20"/>
+                                <color key="backgroundColor" red="0.086274509799999996" green="0.094117647060000004" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="53m-nC-UxH" firstAttribute="leading" secondItem="Zj2-QA-Ijc" secondAttribute="leading" id="5a9-Aa-imi"/>
+                            <constraint firstItem="LMW-Bg-sEi" firstAttribute="bottom" secondItem="ZoQ-Io-HRP" secondAttribute="bottom" id="CTS-i4-xl7"/>
+                            <constraint firstAttribute="trailing" secondItem="53m-nC-UxH" secondAttribute="trailing" id="GPO-kS-2HW"/>
+                            <constraint firstItem="ydN-cq-dbQ" firstAttribute="top" secondItem="53m-nC-UxH" secondAttribute="bottom" id="Q42-lz-6XI"/>
+                            <constraint firstItem="LMW-Bg-sEi" firstAttribute="top" secondItem="Zj2-QA-Ijc" secondAttribute="top" id="RoM-Ng-gNa"/>
+                            <constraint firstItem="LMW-Bg-sEi" firstAttribute="leading" secondItem="Zj2-QA-Ijc" secondAttribute="leading" id="kia-nA-Suh"/>
+                            <constraint firstAttribute="trailing" secondItem="LMW-Bg-sEi" secondAttribute="trailing" id="lCk-9g-2a7"/>
+                            <constraint firstItem="53m-nC-UxH" firstAttribute="top" secondItem="Zj2-QA-Ijc" secondAttribute="top" id="yC9-z0-2zw"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O7w-9b-Gs6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="232" y="352"/>
+        </scene>
+        <!--Invite People-->
+        <scene sceneID="SXS-1H-mWu">
+            <objects>
+                <viewController title="Invite People" id="DoZ-X6-z7A" customClass="InvitePeopleVC" customModule="Zimcher" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LEL-bV-TwD"/>
+                        <viewControllerLayoutGuide type="bottom" id="K88-cP-3sG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7Ld-mW-2au">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xdP-Rp-Eih">
+                                <rect key="frame" x="193" y="86" width="214.5" height="43"/>
+                                <string key="text">One last thing...
+Invite people and have fun!</string>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get shareable link" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C5R-u9-UX1">
+                                <rect key="frame" x="167" y="246" width="111" height="17"/>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cButtonSharableLink" translatesAutoresizingMaskIntoConstraints="NO" id="T1R-AB-cO5">
+                                <rect key="frame" x="186" y="165" width="72" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="72" id="NUW-rk-Lfd"/>
+                                    <constraint firstAttribute="height" constant="72" id="ggA-VB-LaQ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invite by username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nTc-AO-BmA">
+                                <rect key="frame" x="320" y="246" width="117.5" height="17"/>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cButtonUsername" translatesAutoresizingMaskIntoConstraints="NO" id="E6e-bN-vZN">
+                                <rect key="frame" x="342" y="165" width="72" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="Lg1-kd-8zk"/>
+                                    <constraint firstAttribute="width" constant="72" id="SFf-eZ-si2"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invite by email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s4O-ZT-e8S">
+                                <rect key="frame" x="256.5" y="371" width="88.5" height="17"/>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cButtonEmail" translatesAutoresizingMaskIntoConstraints="NO" id="kzS-IH-bft">
+                                <rect key="frame" x="264" y="290" width="72" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="bL7-8u-01L"/>
+                                    <constraint firstAttribute="width" constant="72" id="jdk-hD-57C"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXU-39-D2w" customClass="RadiusButton" customModule="Zimcher" customModuleProvider="target">
+                                <rect key="frame" x="132.5" y="463" width="335" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" priority="750" constant="335" id="KnP-mX-hdD"/>
+                                    <constraint firstAttribute="height" constant="45" id="Pd5-I7-z4T"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="18"/>
+                                <state key="normal" title="Create Now !">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not ready? Skip this step and" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ZL-iU-sod">
+                                <rect key="frame" x="209.5" y="434" width="181" height="17"/>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="14"/>
+                                <color key="textColor" red="0.46274509803921571" green="0.46274509803921571" blue="0.46274509803921571" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7ZL-iU-sod" firstAttribute="centerX" secondItem="7Ld-mW-2au" secondAttribute="centerX" id="3QV-9Q-Yab"/>
+                            <constraint firstItem="C5R-u9-UX1" firstAttribute="centerX" secondItem="T1R-AB-cO5" secondAttribute="centerX" id="5sn-gX-Kma"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="iXU-39-D2w" secondAttribute="trailing" constant="20" id="6Mh-Qb-G16"/>
+                            <constraint firstItem="xdP-Rp-Eih" firstAttribute="centerX" secondItem="7Ld-mW-2au" secondAttribute="centerX" id="CUa-HK-ru9"/>
+                            <constraint firstItem="kzS-IH-bft" firstAttribute="centerX" secondItem="7Ld-mW-2au" secondAttribute="centerX" id="Flj-kk-ciM"/>
+                            <constraint firstItem="nTc-AO-BmA" firstAttribute="centerX" secondItem="E6e-bN-vZN" secondAttribute="centerX" id="PMu-FS-Gfz"/>
+                            <constraint firstItem="C5R-u9-UX1" firstAttribute="top" secondItem="T1R-AB-cO5" secondAttribute="bottom" constant="9" id="ZdE-jU-d8l"/>
+                            <constraint firstItem="T1R-AB-cO5" firstAttribute="top" secondItem="xdP-Rp-Eih" secondAttribute="bottom" constant="36" id="Zu9-8b-1pC"/>
+                            <constraint firstItem="kzS-IH-bft" firstAttribute="top" secondItem="E6e-bN-vZN" secondAttribute="bottom" constant="53" id="aB8-sR-d5a"/>
+                            <constraint firstItem="xdP-Rp-Eih" firstAttribute="top" secondItem="LEL-bV-TwD" secondAttribute="bottom" constant="42" id="cf2-KZ-czC"/>
+                            <constraint firstItem="E6e-bN-vZN" firstAttribute="leading" secondItem="7Ld-mW-2au" secondAttribute="centerX" constant="42" id="jSJ-3k-YSM"/>
+                            <constraint firstItem="s4O-ZT-e8S" firstAttribute="centerX" secondItem="kzS-IH-bft" secondAttribute="centerX" id="klg-dd-3K0"/>
+                            <constraint firstItem="iXU-39-D2w" firstAttribute="centerX" secondItem="7Ld-mW-2au" secondAttribute="centerX" id="lxZ-69-qfj"/>
+                            <constraint firstItem="T1R-AB-cO5" firstAttribute="trailing" secondItem="7Ld-mW-2au" secondAttribute="centerX" constant="-42" id="pqn-HK-hUt"/>
+                            <constraint firstItem="iXU-39-D2w" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="7Ld-mW-2au" secondAttribute="leadingMargin" constant="20" id="q1M-SJ-n8U"/>
+                            <constraint firstItem="K88-cP-3sG" firstAttribute="top" secondItem="iXU-39-D2w" secondAttribute="bottom" constant="92" id="r1n-aU-oen"/>
+                            <constraint firstItem="E6e-bN-vZN" firstAttribute="top" secondItem="T1R-AB-cO5" secondAttribute="top" id="rqB-wm-oFE"/>
+                            <constraint firstItem="iXU-39-D2w" firstAttribute="top" secondItem="7ZL-iU-sod" secondAttribute="bottom" constant="12" id="sUY-MP-IWY"/>
+                            <constraint firstItem="s4O-ZT-e8S" firstAttribute="top" secondItem="kzS-IH-bft" secondAttribute="bottom" constant="9" id="tD1-tr-t79"/>
+                            <constraint firstItem="nTc-AO-BmA" firstAttribute="top" secondItem="E6e-bN-vZN" secondAttribute="bottom" constant="9" id="xrr-qz-Tpw"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Invite People" id="dZ1-YB-Oeg">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="g4H-yX-d7l">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="M0G-17-D1l" customClass="RadiusButton" customModule="Zimcher" customModuleProvider="target">
+                                <rect key="frame" x="528" y="9" width="52" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Done"/>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wSL-r1-pdk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2190" y="352"/>
+        </scene>
+        <!--Create a Zim-->
+        <scene sceneID="Xcd-Ml-CI9">
+            <objects>
+                <viewController id="KhV-3k-87z" customClass="CreateNewZimVC" customModule="Zimcher" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Unk-VC-jWV"/>
+                        <viewControllerLayoutGuide type="bottom" id="5gO-2N-0S0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ucr-26-NZQ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zimPicPlaceholderadd" translatesAutoresizingMaskIntoConstraints="NO" id="KQc-6K-EZl">
+                                <rect key="frame" x="260.5" y="28" width="79" height="79"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zim Image" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oeh-c3-To9">
+                                <rect key="frame" x="267.5" y="117" width="65.5" height="17"/>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="14"/>
+                                <color key="textColor" red="0.46274509803921571" green="0.46274509803921571" blue="0.46274509803921571" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INFORMATION" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OsK-4D-kIA">
+                                <rect key="frame" x="15" y="154" width="104.5" height="19.5"/>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="16"/>
+                                <color key="textColor" red="0.46274509803921571" green="0.46274509803921571" blue="0.46274509803921571" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="600" placeholderIntrinsicHeight="33" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kfm-ow-18a" customClass="TableViewWithIntrinsicSize" customModule="Zimcher" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="181" width="600" height="33"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kfm-ow-18a" firstAttribute="top" secondItem="OsK-4D-kIA" secondAttribute="bottom" constant="8" id="2Tw-Kh-TDs"/>
+                            <constraint firstItem="OsK-4D-kIA" firstAttribute="leading" secondItem="Ucr-26-NZQ" secondAttribute="leading" constant="15" id="2ik-Pg-rdN"/>
+                            <constraint firstItem="kfm-ow-18a" firstAttribute="leading" secondItem="Ucr-26-NZQ" secondAttribute="leading" id="9Vk-KP-9qr"/>
+                            <constraint firstAttribute="trailing" secondItem="kfm-ow-18a" secondAttribute="trailing" id="Ktc-jj-mtk"/>
+                            <constraint firstItem="Oeh-c3-To9" firstAttribute="top" secondItem="KQc-6K-EZl" secondAttribute="bottom" constant="10" id="Q9B-pe-HeG"/>
+                            <constraint firstItem="KQc-6K-EZl" firstAttribute="centerX" secondItem="Ucr-26-NZQ" secondAttribute="centerX" id="VTl-T4-PBE"/>
+                            <constraint firstItem="KQc-6K-EZl" firstAttribute="top" secondItem="Ucr-26-NZQ" secondAttribute="topMargin" constant="28" id="apY-vK-aRI"/>
+                            <constraint firstItem="OsK-4D-kIA" firstAttribute="top" secondItem="Oeh-c3-To9" secondAttribute="bottom" constant="20" id="cEF-cp-U7A"/>
+                            <constraint firstItem="Oeh-c3-To9" firstAttribute="centerX" secondItem="KQc-6K-EZl" secondAttribute="centerX" id="zRB-0l-dQ3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Create a Zim" id="NGE-vP-Lli">
+                        <barButtonItem key="backBarButtonItem" title=" " id="Xla-ZC-TQQ"/>
+                        <barButtonItem key="leftBarButtonItem" image="x" id="gXW-BF-P1H">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="done" id="oPM-u5-ohU">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dgc-6N-sHX" customClass="RadiusButton" customModule="Zimcher" customModuleProvider="target">
+                                <rect key="frame" x="528" y="9" width="52" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="14"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="DoZ-X6-z7A" kind="show" id="fb6-bp-gte"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="kfm-ow-18a" id="3Nl-1u-BAl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K9F-mX-m9J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1519" y="352"/>
+        </scene>
+        <!--NavigationVC With Colored Bar-->
+        <scene sceneID="YfX-MQ-p8j">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gCJ-jg-hhG" customClass="NavigationVCWithColoredBar" customModule="Zimcher" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="b6g-AT-l3h">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="KhV-3k-87z" kind="relationship" relationship="rootViewController" id="TUV-Ul-UXi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gzo-hM-sMc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="872" y="352"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cButtonEmail" width="72" height="72"/>
+        <image name="cButtonSharableLink" width="72" height="72"/>
+        <image name="cButtonUsername" width="72" height="72"/>
+        <image name="x" width="19" height="19"/>
+        <image name="zimPicPlaceholderadd" width="79" height="79"/>
+    </resources>
 </document>

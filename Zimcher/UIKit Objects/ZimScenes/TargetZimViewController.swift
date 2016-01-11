@@ -8,28 +8,62 @@
 
 import UIKit
 
-class TargetZimViewController: UIViewController {
+class TargetZimViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    @IBOutlet weak var navigationBar: UINavigationItem!
+    @IBOutlet weak var tableView: UITableView!
 
+    let cellNibName = "FeedsCell"
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        navigationBar.title = "Apple Fan"
+        
+        setupTableView()
+    }
+    
+    private func setupTableView()
+    {
+        tableView.dataSource = self
+        tableView.delegate = self
+        tableView.registerNib(UINib(nibName: cellNibName, bundle: nil), forCellReuseIdentifier: cellNibName)
+        
+        tableView.separatorStyle = .None
+        tableView.backgroundColor = PALETTE.PALE_GRAY.colorWithAlphaComponent(0.8)
+        
+        tableView.estimatedRowHeight = 50
+        tableView.rowHeight = UITableViewAutomaticDimension
+        
+        view.backgroundColor = tableView.backgroundColor
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func backPressed(sender: UIBarButtonItem) {
+        parentViewController?.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 2
+    }
+    
+    func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 8
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
     }
-    */
+
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier(cellNibName, forIndexPath: indexPath)
+
+        // Configure the cell...
+
+        return cell
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        performSegueWithIdentifier("showSinglePost", sender: nil)
+    }
 
 }

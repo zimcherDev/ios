@@ -13,23 +13,17 @@ class NavigationVCWithColoredBar: UINavigationController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        navigationBar.setBackgroundImage(UIImage.imageFromColorAndSize(COLORSCHEME.MYZIMS.NAVIGATION_BAR, size: CGSize(width: 1, height: 1)), forBarMetrics: .Default)
+        
+        navigationBar.translucent = false
+        navigationBar.shadowImage = UIImage()
+        
+        navigationBar.titleTextAttributes = [NSFontAttributeName: FONTS.SF_MEDIUM.fontWithSize(20), NSForegroundColorAttributeName: UIColor.whiteColor()]
+        navigationBar.tintColor = UIColor.whiteColor()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.Portrait
     }
-    */
 
 }

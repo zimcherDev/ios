@@ -15,14 +15,25 @@ extension UIButton {
     }
 }
 
-class RadiusButton: UIButton {
+@IBDesignable class RadiusButton: UIButton {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        cornerRadius = UI.LOGIN_BUTTON_CORNER_RADIUS
+        setup()
     }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        setup()
+    }
+    
+    private func setup()
+    {
         cornerRadius = UI.LOGIN_BUTTON_CORNER_RADIUS
+        setupDefault()
+    }
+    private func setupDefault()
+    {
+        tintColor = COLORSCHEME.ROUNDEDCORNER_BUTTON.TINT
+        backgroundColor = COLORSCHEME.ROUNDEDCORNER_BUTTON.BG
     }
 }

@@ -8,34 +8,34 @@
 
 import UIKit
 
-class LoginViewController: ViewControllerWithKBLayoutGuide, ValidationAndTopAlertView{
+class LoginViewController: ViewControllerWithKBLayoutGuide, TopAlertViewContainer{
 
-    @IBOutlet weak var emailLabel: UILabel!
-    @IBOutlet weak var passwordLabel: UILabel!
+    @IBOutlet weak var tableView: TableViewWithIntrinsicSize!
     
-    @IBOutlet weak var emailInput: UIValidatableTextField!
-    @IBOutlet weak var passwordInput: UIValidatableTextField!
+    var entryField: EntryField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-        
         //dansGame WutFace
         navigationItem.backBarButtonItem = UIBarButtonItem(title:"", style:.Plain, target:nil, action:nil)
-        setupValidatables()
+        
+        entryField = EntryField(tableView: tableView)
+        
+        entryField.feedData(generateData())
     }
     
-    func setupValidatables()
+    private func generateData() -> [EntryFieldData]
     {
-        emailInput.validator = IsValid.email
-        passwordInput.validator = IsValid.password
+        let r = [ReusableTextEntryFieldData.emailEntryFieldData, ReusableTextEntryFieldData.passwordEntryFieldData]
+        
+        r.forEach {[unowned self] in $0.onFailCallback = self.showTopAlert }
+        
+        return r.map { $0 as EntryFieldData }
     }
 
     @IBAction func donePressed() {
-        let inp:[Validatable] = [emailInput, passwordInput]
-        
-        guard validate(inp) else { return }
+        guard entryField.onSubmitCallback() else { return }
         
         //Networking.userLoginWithUserJSON(payload: <#T##Any?#>, completionHandler: <#T##responseHandler?##responseHandler?##(data: NSData?, response: NSURLResponse?, error: NSError?) -> Void#>)
     }
