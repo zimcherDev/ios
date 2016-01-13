@@ -11,6 +11,7 @@
 import Foundation
 
 class RequestObject {
+    
     var APIName: String? //APT method name (login, signup, etc)
     var requestJson: [String:String]? //requestJson that will be sent to the server
     var addtionalJson: [String: String]? //addtionalJson that used for sepecific server call
@@ -27,6 +28,12 @@ class RequestObject {
     //generate json that will be shared accoss all the server calls, feel free to add more that make sense
     func setUpSharedRequestJson() {
         self.requestJson = [JSON_KEY_PATH.GENERAL.APP_VERSION:Utility.getAppVerison()]
+        self.addUserSessionInfo()
     }
 
+    
+    //TODO: method to add user and session info into self.requestJson as shared request json if logged in
+    func addUserSessionInfo() {
+    
+    }
 }
