@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		44EADB40BCBEBA34205EE462 /* EntryField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EAD2E3FB6C64388E7217AF /* EntryField.swift */; };
 		44EADF943D0F20BB9E526F99 /* BaseEntryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EAD3F996AD30B6BEF1CD91 /* BaseEntryCell.swift */; };
+		88A9ECBF1C47050300CBBD01 /* RequestObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A9ECBE1C47050300CBBD01 /* RequestObject.swift */; };
+		88A9ECC11C47079000CBBD01 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A9ECC01C47079000CBBD01 /* Utility.swift */; };
 		B10BA8F91C12B46D00547220 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B10BA8F81C12B46D00547220 /* Settings.storyboard */; };
 		B10BA8FB1C12B7B300547220 /* SettingNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10BA8FA1C12B7B300547220 /* SettingNavigationViewController.swift */; };
 		B10EDFAF1BFA680A00FE8E20 /* Righteous-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B10EDFAC1BFA680900FE8E20 /* Righteous-Regular.ttf */; };
@@ -89,6 +91,8 @@
 /* Begin PBXFileReference section */
 		44EAD2E3FB6C64388E7217AF /* EntryField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EntryField.swift; path = EntryField/EntryField.swift; sourceTree = "<group>"; };
 		44EAD3F996AD30B6BEF1CD91 /* BaseEntryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseEntryCell.swift; path = "Zimcher/UIKit Objects/UI Helpers/EntryField/BaseEntryCell.swift"; sourceTree = SOURCE_ROOT; };
+		88A9ECBE1C47050300CBBD01 /* RequestObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestObject.swift; sourceTree = "<group>"; };
+		88A9ECC01C47079000CBBD01 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		B10BA8F81C12B46D00547220 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		B10BA8FA1C12B7B300547220 /* SettingNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingNavigationViewController.swift; sourceTree = "<group>"; };
 		B10EDFAC1BFA680900FE8E20 /* Righteous-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Righteous-Regular.ttf"; sourceTree = "<group>"; };
@@ -457,6 +461,7 @@
 		B861607E1BFA640A0014E1D0 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				88A9ECC01C47079000CBBD01 /* Utility.swift */,
 				B86160801BFA640A0014E1D0 /* EntryValidation */,
 				B86160831BFA640A0014E1D0 /* Extensions */,
 				B86160851BFA640A0014E1D0 /* MIME.swift */,
@@ -488,6 +493,7 @@
 				B86160881BFA640A0014E1D0 /* MultipartUpload.swift */,
 				B86160891BFA640A0014E1D0 /* Networking.swift */,
 				B861608A1BFA640A0014E1D0 /* TaskCreator.swift */,
+				88A9ECBE1C47050300CBBD01 /* RequestObject.swift */,
 			);
 			path = NetworkingHelper;
 			sourceTree = "<group>";
@@ -680,7 +686,9 @@
 				B86160A01BFA73340014E1D0 /* ZCViewController.swift in Sources */,
 				B1F475351C41A6FA0025C872 /* NavigationVCwithStatusBarHidden.swift in Sources */,
 				44EADF943D0F20BB9E526F99 /* BaseEntryCell.swift in Sources */,
+				88A9ECBF1C47050300CBBD01 /* RequestObject.swift in Sources */,
 				44EADB40BCBEBA34205EE462 /* EntryField.swift in Sources */,
+				88A9ECC11C47079000CBBD01 /* Utility.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
