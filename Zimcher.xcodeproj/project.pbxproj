@@ -76,6 +76,11 @@
 		B86160921BFA640A0014E1D0 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86160891BFA640A0014E1D0 /* Networking.swift */; };
 		B86160931BFA640A0014E1D0 /* TaskCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B861608A1BFA640A0014E1D0 /* TaskCreator.swift */; };
 		B86160A01BFA73340014E1D0 /* ZCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B861609F1BFA73340014E1D0 /* ZCViewController.swift */; };
+		B8E7D55E1C488FC900C323DB /* SearchFlow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8E7D55D1C488FC900C323DB /* SearchFlow.storyboard */; };
+		B8FEFDD11C49E53C0081CCD9 /* SearchLandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FEFDD01C49E53C0081CCD9 /* SearchLandingViewController.swift */; };
+		B8FEFDD31C49E5900081CCD9 /* TopTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FEFDD21C49E5900081CCD9 /* TopTabbar.swift */; };
+		B8FEFDDA1C4B01040081CCD9 /* TopTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FEFDD91C4B01040081CCD9 /* TopTabbarViewController.swift */; };
+		B8FEFDDE1C4B05DE0081CCD9 /* NSLayoutConstraintConvenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FEFDDD1C4B05DE0081CCD9 /* NSLayoutConstraintConvenience.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -162,6 +167,11 @@
 		B86160891BFA640A0014E1D0 /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		B861608A1BFA640A0014E1D0 /* TaskCreator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskCreator.swift; sourceTree = "<group>"; };
 		B861609F1BFA73340014E1D0 /* ZCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZCViewController.swift; sourceTree = "<group>"; };
+		B8E7D55D1C488FC900C323DB /* SearchFlow.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SearchFlow.storyboard; sourceTree = "<group>"; };
+		B8FEFDD01C49E53C0081CCD9 /* SearchLandingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchLandingViewController.swift; sourceTree = "<group>"; };
+		B8FEFDD21C49E5900081CCD9 /* TopTabbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopTabbar.swift; sourceTree = "<group>"; };
+		B8FEFDD91C4B01040081CCD9 /* TopTabbarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopTabbarViewController.swift; sourceTree = "<group>"; };
+		B8FEFDDD1C4B05DE0081CCD9 /* NSLayoutConstraintConvenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSLayoutConstraintConvenience.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +215,7 @@
 		B10EDFB21BFA685300FE8E20 /* UIKit Objects */ = {
 			isa = PBXGroup;
 			children = (
+				B8E7D55C1C488FA300C323DB /* SearchFlow */,
 				B861609E1BFA73340014E1D0 /* BaseViewController */,
 				B10EDFB31BFA685300FE8E20 /* MainScenes */,
 				B10EDFB71BFA685300FE8E20 /* SignUp&LoginScenes */,
@@ -245,6 +256,7 @@
 				B10EDFC21BFA685300FE8E20 /* CustomUIElement */,
 				B10EDFC41BFA685300FE8E20 /* Keyboard */,
 				B1B51AF71C109D26001EE278 /* EntryField */,
+				B8FEFDD21C49E5900081CCD9 /* TopTabbar.swift */,
 			);
 			path = "UI Helpers";
 			sourceTree = "<group>";
@@ -483,6 +495,7 @@
 			isa = PBXGroup;
 			children = (
 				B86160841BFA640A0014E1D0 /* UIImageExtensions.swift */,
+				B8FEFDDD1C4B05DE0081CCD9 /* NSLayoutConstraintConvenience.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -502,8 +515,18 @@
 			isa = PBXGroup;
 			children = (
 				B861609F1BFA73340014E1D0 /* ZCViewController.swift */,
+				B8FEFDD91C4B01040081CCD9 /* TopTabbarViewController.swift */,
 			);
 			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		B8E7D55C1C488FA300C323DB /* SearchFlow */ = {
+			isa = PBXGroup;
+			children = (
+				B8E7D55D1C488FC900C323DB /* SearchFlow.storyboard */,
+				B8FEFDD01C49E53C0081CCD9 /* SearchLandingViewController.swift */,
+			);
+			path = SearchFlow;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -592,6 +615,7 @@
 				B1F475311C419B7F0025C872 /* MediaScenes.storyboard in Resources */,
 				B16274D61C3885A40051A781 /* CreateNewZim.storyboard in Resources */,
 				B1D40B2E1C3196FE002A759D /* FeedsCell.xib in Resources */,
+				B8E7D55E1C488FC900C323DB /* SearchFlow.storyboard in Resources */,
 				B10EDFD41BFA694600FE8E20 /* Default-568h@2x.png in Resources */,
 				B10BA8F91C12B46D00547220 /* Settings.storyboard in Resources */,
 				B10EDFB11BFA680A00FE8E20 /* SF-UI-Display-Semibold.otf in Resources */,
@@ -658,14 +682,18 @@
 				B1EE9A2A1C194AF60072E480 /* FacebookCellData.swift in Sources */,
 				B86160911BFA640A0014E1D0 /* MultipartUpload.swift in Sources */,
 				B10EDFCA1BFA685300FE8E20 /* ForgetPasswordViewController.swift in Sources */,
+				B8FEFDDE1C4B05DE0081CCD9 /* NSLayoutConstraintConvenience.swift in Sources */,
 				B1B51B001C10AD69001EE278 /* Styling.swift in Sources */,
 				B1B51B081C10CD94001EE278 /* TextEntryCell.swift in Sources */,
+				B8FEFDD11C49E53C0081CCD9 /* SearchLandingViewController.swift in Sources */,
 				B188E3741C30942F007A2813 /* ZimsCell.swift in Sources */,
 				B10EDFCE1BFA685300FE8E20 /* SignUpViewController.swift in Sources */,
 				B119A0351C17D69E007C19A6 /* TextPromptCell.swift in Sources */,
 				B12933981C140174009730B2 /* SelectableCellData.swift in Sources */,
+				B8FEFDDA1C4B01040081CCD9 /* TopTabbarViewController.swift in Sources */,
 				B1A97DA31C3849190087FAC8 /* MyZimsSubVC.swift in Sources */,
 				B17C594E1C3A243900B99AF8 /* TargetZimViewController.swift in Sources */,
+				B8FEFDD31C49E5900081CCD9 /* TopTabbar.swift in Sources */,
 				B16274D81C38F3C60051A781 /* CreateNewZimVC.swift in Sources */,
 				B1B109531C11FE5800161063 /* OnSubmitCallbackGenerator.swift in Sources */,
 				B861605A1BFA63F90014E1D0 /* AppDelegate.swift in Sources */,
