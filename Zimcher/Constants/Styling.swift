@@ -51,6 +51,10 @@ struct UI {
         static let TABBAR_HEIGHT = CGFloat(45)
         static let TABBAR_BORDER_HEIGHT = CGFloat(4)
     }
+    
+    struct CAMERA_ROLL {
+        static let CELL_SIZE = CGSize(width: 88, height: 88)
+    }
 }
 
 struct FONTS {

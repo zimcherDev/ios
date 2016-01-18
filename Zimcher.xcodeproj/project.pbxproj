@@ -11,7 +11,6 @@
 		44EADF943D0F20BB9E526F99 /* BaseEntryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EAD3F996AD30B6BEF1CD91 /* BaseEntryCell.swift */; };
 		B10BA8F91C12B46D00547220 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B10BA8F81C12B46D00547220 /* Settings.storyboard */; };
 		B10BA8FB1C12B7B300547220 /* SettingNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10BA8FA1C12B7B300547220 /* SettingNavigationViewController.swift */; };
-		B10EDFAF1BFA680A00FE8E20 /* Righteous-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B10EDFAC1BFA680900FE8E20 /* Righteous-Regular.ttf */; };
 		B10EDFB01BFA680A00FE8E20 /* SF-UI-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = B10EDFAD1BFA680A00FE8E20 /* SF-UI-Display-Medium.otf */; };
 		B10EDFB11BFA680A00FE8E20 /* SF-UI-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B10EDFAE1BFA680A00FE8E20 /* SF-UI-Display-Semibold.otf */; };
 		B10EDFC61BFA685300FE8E20 /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B10EDFB41BFA685300FE8E20 /* Discover.storyboard */; };
@@ -38,6 +37,7 @@
 		B17C59491C39E71300B99AF8 /* InvitePeopleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17C59481C39E71300B99AF8 /* InvitePeopleVC.swift */; };
 		B17C594C1C3A08F300B99AF8 /* Zims.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B17C594B1C3A08F300B99AF8 /* Zims.storyboard */; };
 		B17C594E1C3A243900B99AF8 /* TargetZimViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17C594D1C3A243900B99AF8 /* TargetZimViewController.swift */; };
+		B17D60401C45523D00C4B36F /* SF-UI-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = B17D603F1C45512B00C4B36F /* SF-UI-Display-Regular.otf */; };
 		B188E3741C30942F007A2813 /* ZimsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B188E3721C30942F007A2813 /* ZimsCell.swift */; };
 		B188E3751C30942F007A2813 /* ZimsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B188E3731C30942F007A2813 /* ZimsCell.xib */; };
 		B1A750551BFA5308002E92AF /* ZimcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A750541BFA5308002E92AF /* ZimcherTests.swift */; };
@@ -56,6 +56,7 @@
 		B1D40B301C31C09A002A759D /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1D40B2F1C31C09A002A759D /* Home.storyboard */; };
 		B1D40B321C31C9ED002A759D /* MyZimsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D40B311C31C9ED002A759D /* MyZimsVC.swift */; };
 		B1D40B341C31E365002A759D /* NavigationVCWithColoredBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D40B331C31E365002A759D /* NavigationVCWithColoredBar.swift */; };
+		B1DF15321C46A792005DB18E /* PreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DF15311C46A792005DB18E /* PreviewCell.swift */; };
 		B1EE9A261C191A200072E480 /* DisclosureArrowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EE9A251C191A200072E480 /* DisclosureArrowView.swift */; };
 		B1EE9A281C194AE60072E480 /* FacebookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EE9A271C194AE60072E480 /* FacebookCell.swift */; };
 		B1EE9A2A1C194AF60072E480 /* FacebookCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EE9A291C194AF60072E480 /* FacebookCellData.swift */; };
@@ -91,7 +92,6 @@
 		44EAD3F996AD30B6BEF1CD91 /* BaseEntryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseEntryCell.swift; path = "Zimcher/UIKit Objects/UI Helpers/EntryField/BaseEntryCell.swift"; sourceTree = SOURCE_ROOT; };
 		B10BA8F81C12B46D00547220 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		B10BA8FA1C12B7B300547220 /* SettingNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingNavigationViewController.swift; sourceTree = "<group>"; };
-		B10EDFAC1BFA680900FE8E20 /* Righteous-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Righteous-Regular.ttf"; sourceTree = "<group>"; };
 		B10EDFAD1BFA680A00FE8E20 /* SF-UI-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Medium.otf"; sourceTree = "<group>"; };
 		B10EDFAE1BFA680A00FE8E20 /* SF-UI-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Semibold.otf"; sourceTree = "<group>"; };
 		B10EDFB41BFA685300FE8E20 /* Discover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Discover.storyboard; path = ../MainScenes/Discover.storyboard; sourceTree = "<group>"; };
@@ -118,6 +118,7 @@
 		B17C59481C39E71300B99AF8 /* InvitePeopleVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvitePeopleVC.swift; sourceTree = "<group>"; };
 		B17C594B1C3A08F300B99AF8 /* Zims.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Zims.storyboard; sourceTree = "<group>"; };
 		B17C594D1C3A243900B99AF8 /* TargetZimViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetZimViewController.swift; sourceTree = "<group>"; };
+		B17D603F1C45512B00C4B36F /* SF-UI-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Regular.otf"; sourceTree = "<group>"; };
 		B188E3721C30942F007A2813 /* ZimsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ZimsCell.swift; path = ../../Zims/ZimsCell.swift; sourceTree = "<group>"; };
 		B188E3731C30942F007A2813 /* ZimsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ZimsCell.xib; path = ../../Zims/ZimsCell.xib; sourceTree = "<group>"; };
 		B1A7503C1BFA5307002E92AF /* Zimcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zimcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,6 +140,7 @@
 		B1D40B2F1C31C09A002A759D /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Home.storyboard; path = "Zimcher/UIKit Objects/MainScenes/Home.storyboard"; sourceTree = SOURCE_ROOT; };
 		B1D40B311C31C9ED002A759D /* MyZimsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyZimsVC.swift; path = "Zimcher/UIKit Objects/MyZimsScenes/MyZimsVC.swift"; sourceTree = SOURCE_ROOT; };
 		B1D40B331C31E365002A759D /* NavigationVCWithColoredBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationVCWithColoredBar.swift; sourceTree = "<group>"; };
+		B1DF15311C46A792005DB18E /* PreviewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewCell.swift; sourceTree = "<group>"; };
 		B1EE9A251C191A200072E480 /* DisclosureArrowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisclosureArrowView.swift; sourceTree = "<group>"; };
 		B1EE9A271C194AE60072E480 /* FacebookCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookCell.swift; sourceTree = "<group>"; };
 		B1EE9A291C194AF60072E480 /* FacebookCellData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookCellData.swift; sourceTree = "<group>"; };
@@ -191,7 +193,7 @@
 		B10EDFAB1BFA680900FE8E20 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				B10EDFAC1BFA680900FE8E20 /* Righteous-Regular.ttf */,
+				B17D603F1C45512B00C4B36F /* SF-UI-Display-Regular.otf */,
 				B10EDFAD1BFA680A00FE8E20 /* SF-UI-Display-Medium.otf */,
 				B10EDFAE1BFA680A00FE8E20 /* SF-UI-Display-Semibold.otf */,
 			);
@@ -427,6 +429,7 @@
 			isa = PBXGroup;
 			children = (
 				B1F475301C419B7F0025C872 /* MediaScenes.storyboard */,
+				B1DF15311C46A792005DB18E /* PreviewCell.swift */,
 				B1F475321C419E650025C872 /* CameraRollVC.swift */,
 				B1F475341C41A6FA0025C872 /* NavigationVCwithStatusBarHidden.swift */,
 			);
@@ -588,12 +591,12 @@
 				B1D40B2E1C3196FE002A759D /* FeedsCell.xib in Resources */,
 				B10EDFD41BFA694600FE8E20 /* Default-568h@2x.png in Resources */,
 				B10BA8F91C12B46D00547220 /* Settings.storyboard in Resources */,
-				B10EDFB11BFA680A00FE8E20 /* SF-UI-Display-Semibold.otf in Resources */,
-				B10EDFAF1BFA680A00FE8E20 /* Righteous-Regular.ttf in Resources */,
 				B10EDFC71BFA685300FE8E20 /* MyZims.storyboard in Resources */,
 				B1D40B301C31C09A002A759D /* Home.storyboard in Resources */,
 				B17C594C1C3A08F300B99AF8 /* Zims.storyboard in Resources */,
 				B10EDFD01BFA685300FE8E20 /* AlertPanel.xib in Resources */,
+				B17D60401C45523D00C4B36F /* SF-UI-Display-Regular.otf in Resources */,
+				B10EDFB11BFA680A00FE8E20 /* SF-UI-Display-Semibold.otf in Resources */,
 				B10EDFB01BFA680A00FE8E20 /* SF-UI-Display-Medium.otf in Resources */,
 				B10EDFC61BFA685300FE8E20 /* Discover.storyboard in Resources */,
 				B10EDFCB1BFA685300FE8E20 /* LogIn.storyboard in Resources */,
@@ -648,6 +651,7 @@
 				B861608F1BFA640A0014E1D0 /* MIME.swift in Sources */,
 				B1D40B341C31E365002A759D /* NavigationVCWithColoredBar.swift in Sources */,
 				B861608D1BFA640A0014E1D0 /* TextValidation.swift in Sources */,
+				B1DF15321C46A792005DB18E /* PreviewCell.swift in Sources */,
 				B10EDFC91BFA685300FE8E20 /* EntryViewController.swift in Sources */,
 				B1EE9A2A1C194AF60072E480 /* FacebookCellData.swift in Sources */,
 				B86160911BFA640A0014E1D0 /* MultipartUpload.swift in Sources */,

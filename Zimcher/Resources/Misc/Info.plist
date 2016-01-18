@@ -29,7 +29,7 @@
 	</dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Righteous-Regular.ttf</string>
+		<string>SF-UI-Display-Regular.otf</string>
 		<string>SF-UI-Display-Medium.otf</string>
 		<string>SF-UI-Display-Semibold.otf</string>
 	</array>
