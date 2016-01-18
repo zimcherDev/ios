@@ -1,6 +1,11 @@
 import Foundation
 
 struct JSON_KEY_PATH {
+    
+    struct GENERAL {
+        static let APP_VERSION = "appVerison"
+    }
+    
     struct MEDIA {
         static let ID = "videoId"
         static let NAME = "videoName"
@@ -33,4 +38,8 @@ struct REGISTER {
     static let USERNAME_KEY = "username"
     static let PASSWORD_KEY = "password"
     static let EMAIL_KEY = "email"
+}
+
+struct CONSTANTS {
+    static let VERSION_GETTER_STRING = "CFBundleShortVersionString"
 }
