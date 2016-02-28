@@ -9,37 +9,45 @@
 import UIKit
 import Photos
 
-class CameraRollVC: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+class CameraRollVC: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, PHPhotoLibraryChangeObserver {
     @IBOutlet weak var downButton: UIButton!
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var datasource = [UIImage]()
+    private var cellSize:CGSize {
+        return (collectionView.collectionViewLayout as! UICollectionViewFlowLayout).itemSize
+    }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
-        let cellSize = (collectionView.collectionViewLayout as! UICollectionViewFlowLayout).itemSize
-        
-        let options = PHFetchOptions()
-        options.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: true)]
-
-
-        let assets = PHAsset.fetchAssetsWithMediaType(.Image, options: options)
-        
-        datasource.removeAll()
-        assets.enumerateObjectsUsingBlock { asset, idx, stop in
-        PHImageManager.defaultManager().requestImageForAsset(asset as! PHAsset, targetSize: cellSize, contentMode: .AspectFill, options: nil)  { image, dict in
+    var fetchResult: PHFetchResult!
+    
+    var datasource: [UIImage] {
+        var data = [UIImage]()
+        fetchResult.enumerateObjectsUsingBlock { asset, idx, stop in
+        PHImageManager.defaultManager().requestImageForAsset(asset as! PHAsset, targetSize: self.cellSize, contentMode: .AspectFill, options: nil)  { image, dict in
             
             guard let img = image else {
                 print(dict)
                 return
             }
             
-            self.datasource.append(img)
+            data.append(img)
             self.collectionView.reloadData()
+        }
     }
-}
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+        
+        
+        let options = PHFetchOptions()
+        options.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: true)]
+
+
+        fetchResult = PHAsset.fetchAssetsWithMediaType(.Image, options: options)
+        
+        }
+        
+        PHPhotoLibrary.sharedPhotoLibrary().registerChangeObserver(self)
         
     }
 
@@ -57,5 +65,15 @@ class CameraRollVC: UIViewController, UICollectionViewDataSource, UICollectionVi
         cell.previewImage.image = datasource[indexPath.row]
         
         return cell
+    }
+    
+    func photoLibraryDidChange(changeInstance: PHChange) {
+        
+        fetchResult.enumerateObjectsUsingBlock { result, _, _ in
+            guard let change = changeInstance.changeDetailsForFetchResult(result as! PHFetchResult) else { return }
+            
+            
+            
+        }
     }
 }
