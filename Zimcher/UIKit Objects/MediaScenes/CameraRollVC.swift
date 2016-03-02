@@ -19,21 +19,6 @@ class CameraRollVC: UIViewController, UICollectionViewDataSource, UICollectionVi
     
     var fetchResult: PHFetchResult!
     
-    var datasource: [UIImage] {
-        var data = [UIImage]()
-        fetchResult.enumerateObjectsUsingBlock { asset, idx, stop in
-        PHImageManager.defaultManager().requestImageForAsset(asset as! PHAsset, targetSize: self.cellSize, contentMode: .AspectFill, options: nil)  { image, dict in
-            
-            guard let img = image else {
-                print(dict)
-                return
-            }
-            
-            data.append(img)
-            self.collectionView.reloadData()
-        }
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -45,8 +30,6 @@ class CameraRollVC: UIViewController, UICollectionViewDataSource, UICollectionVi
 
         fetchResult = PHAsset.fetchAssetsWithMediaType(.Image, options: options)
         
-        }
-        
         PHPhotoLibrary.sharedPhotoLibrary().registerChangeObserver(self)
         
     }
@@ -56,24 +39,31 @@ class CameraRollVC: UIViewController, UICollectionViewDataSource, UICollectionVi
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return datasource.count
+        return fetchResult.count
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("photoCell", forIndexPath: indexPath) as! PreviewCell
         
-        cell.previewImage.image = datasource[indexPath.row]
+        let asset = fetchResult.objectAtIndex(indexPath.row) as! PHAsset
+        
+        PHImageManager.defaultManager().requestImageForAsset(asset, targetSize: cellSize, contentMode: .AspectFill, options: nil) { image, _ in
+            cell.previewImage.image = image
+        }
         
         return cell
     }
     
     func photoLibraryDidChange(changeInstance: PHChange) {
         
-        fetchResult.enumerateObjectsUsingBlock { result, _, _ in
-            guard let change = changeInstance.changeDetailsForFetchResult(result as! PHFetchResult) else { return }
-            
-            
-            
-        }
+        let fetchResultArray = fetchResult.copy() as! [PHFetchResult]
+        let changes = fetchResultArray
+            .map(changeInstance.changeDetailsForFetchResult)
+        
+        let x = zip(fetchResultArray, changes)
+            .map { $0.1 == nil ? $0.0 : $0.1!.fetchResultAfterChanges }
+        
+        fetchResult = x as! PHFetchResult
+        collectionView.reloadData()
     }
 }
